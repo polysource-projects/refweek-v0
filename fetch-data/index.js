@@ -67,7 +67,24 @@ for (const section of Object.keys(sections)) {
 
         }
 
-        writeFileSync(`../data/${sections[section]}.json`, JSON.stringify(coursDataList, null, 4));
+        const formattedCoursDataList = [];
+
+        // regroup les cours qui ont le même nom coursStandardName
+
+        for (const coursData of coursDataList) {
+            const coursStandardName = coursData.coursStandardName;
+            const existingCours = formattedCoursDataList.find(c => c.coursStandardName === coursStandardName);
+            if (existingCours) {
+                existingCours.coursList.push(coursData);
+            } else {
+                formattedCoursDataList.push({
+                    coursStandardName,
+                    coursList: [coursData]
+                });
+            }
+        }
+
+        writeFileSync(`../data/${sections[section]}.json`, JSON.stringify(formattedCoursDataList, null, 4));
         
     })
 }

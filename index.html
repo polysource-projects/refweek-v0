@@ -9,58 +9,22 @@
     <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
-    <div x-data="{
-        selectedSection: 'IN',
-        sections: ['IN', 'MX' , 'SC'],
-        d: ['a'],
-        coursDataPerSection: {
-            'IN': [
-                {
-                    coursName: 'Analyse I',
-                    coursList: [
-                        {
-                            professor: 'Garin',
-                            lessons: [
-                                {
-                                    day: 1,
-                                    start: 8,
-                                    end: 10,
-                                    type: 'exercices'
-                                }
-                            ]
-                        },
-                        {
-                            professor: 'Mira',
-                            lessons: [
-                                {
-                                    day: 1,
-                                    start: 8,
-                                    end: 12,
-                                    type: 'exercices'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    coursName: 'Algèbre Linéaire I',
-                    coursList: [
-                        {
-                            professor: 'Genbre',
-                            lessons: [
-                                {
-                                    day: 1,
-                                    start: 8,
-                                    end: 10,
-                                    type: 'exercices'
-                                }
-                            ]
-                        }
-                    ]
+    <div
+        x-data="{
+            selectedSection: 'IN',
+            sections: ['IN', 'MX' , 'SC'],
+            d: ['a'],
+            coursDataPerSection: {},
+
+            async fetchCoursDataPerSection () {
+                this.coursDataPerSection = {
+                    'IN': await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/main/data/IN.json')).json()
                 }
-            ]
-        }
-    }">
+            }
+        }"
+
+        x-init="fetchCoursDataPerSection()"
+    >
         <h1>EPFL BA1 Week Builder</h1>
         <p>Choisissez une section puis sélectionnez vos cours en fonction du format (inversé, online ou classique), du professeur (ex. manière d'enseigner, examens, ancienneté) et de la langue (anglais, allemand ou français).</p>
         <div id="section-form">
@@ -79,10 +43,10 @@
                 <!-- loop and for each cours, allow to choose one professor -->
                 <template x-for="cours in coursDataPerSection[selectedSection]">
                     <div>
-                    <label x-text="cours.coursName"></label>
+                    <label x-text="cours.coursStandardName"></label>
                     <select class="form-control" id="cours-select" x-model="d">
                         <template x-for="lesson in cours.coursList">
-                            <option x-text="lesson.professor"></option>
+                            <option x-text="lesson.prof"></option>
                         </template>
                     </select>
                 </div>
