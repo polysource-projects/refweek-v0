@@ -95,20 +95,24 @@
         document.addEventListener('alpine:init', () => {
             Alpine.data('store', () => ({
                 selectedSection: 'IN',
-                sections: ['IN'],
+                sections: [],
                 selectedProfessorsPerSectionPerCours: {},
                 coursDataPerSection: {},
 
                 init() {
-                    this.fetchCoursDataPerSection()
-                        .then(() => {
-                            this.updateEDT()
-                        });
+                    this.fetchSections()
+                    .then((sections) => {
+                        this.sections = sections;
+                        return this.fetchCoursDataPerSection();
+                    })
+                    .then(() => {
+                        this.updateEDT();
+                    });
                 },
 
                 async fetchCoursDataPerSection () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/30f6fd4f0790feac3de36e52835ca78ded3dbb2c/data/' + section + '.json')).json()
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/0eb5d595d5908d6ee3b9cfaa85985ee688872780/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
                             this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0].prof;
@@ -117,8 +121,8 @@
                 },
 
                 async fetchSections () {
-                    const sections = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/30f6fd4f0790feac3de36e52835ca78ded3dbb2c/data/sections.json')).json();
-                    this.sections = Object.values(sections)
+                    const sections = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/0eb5d595d5908d6ee3b9cfaa85985ee688872780/data/sections.json')).json();
+                    return Object.values(sections);
                 },
 
                 updateEDT () {
