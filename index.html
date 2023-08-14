@@ -18,7 +18,7 @@
         <div id="section-form">
             <div class="form-group">
                 <h4>Section</h4>
-                <select class="form-control" id="section-select" x-model="selectedSection">
+                <select class="form-control" id="section-select" x-model="selectedSection" x-on:change.debounce="updateEDT">
                     <template x-for="section in sections">
                         <option x-text="section"></option>
                     </template>
