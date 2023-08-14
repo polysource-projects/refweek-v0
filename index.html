@@ -34,7 +34,7 @@
                         <label x-text="cours.coursStandardName"></label>
                         <select class="form-control" id="cours-select" x-model="selectedProfessorsPerSectionPerCours[selectedSection][cours.coursStandardName]" x-on:change.debounce="updateEDT">
                             <template x-for="lesson in cours.coursList">
-                                <option x-text="lesson.prof"></option>
+                                <option x-text="lesson.prof + (cours.coursList[0].coursPrecision ? ' (' + cours.coursList[0].coursPrecision + ')' : '')"></option>
                             </template>
                         </select>
                     </div>
@@ -108,7 +108,7 @@
 
                 async fetchCoursDataPerSection () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/6778bd891e4cce3789abbc23a055c4168aebf1af/data/' + section + '.json')).json()
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/59f8daed75e3b0f72b4740d451a852ad25cd8ba4/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
                             this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList[0].prof;

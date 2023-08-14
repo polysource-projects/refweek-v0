@@ -4,8 +4,7 @@
         "coursList": [
             {
                 "coursStandardName": "Advanced information, computation, communication I",
-                "coursName": "Advanced information, computation, communication I (This course focuses on the foundational, discrete mathematics core of advanced computation.)",
-                "coursPrecision": "This course focuses on the foundational, discrete mathematics core of advanced computation.",
+                "coursName": "Advanced information, computation, communication I",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/advanced-information-computation-communication-i-CS-101",
                 "prof": "Käser Jacober",
                 "lessons": [
@@ -63,7 +62,7 @@
             },
             {
                 "coursStandardName": "Algèbre linéaire",
-                "coursName": "Algèbre linéaire (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire\n)",
+                "coursName": "Algèbre linéaire (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
                 "prof": "Testerman",
@@ -175,7 +174,7 @@
             },
             {
                 "coursStandardName": "Analyse I",
-                "coursName": "Analyse I (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursName": "Analyse I (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-classe-inversee-MATH-101-PI",
                 "prof": "Garin",
@@ -202,7 +201,7 @@
             },
             {
                 "coursStandardName": "Analyse I",
-                "coursName": "Analyse I (online) (Cours en ligne, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursName": "Analyse I (online)",
                 "coursPrecision": "online",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-online-MATH-101-OL",
                 "prof": "Friedli",
@@ -287,7 +286,7 @@
             },
             {
                 "coursStandardName": "Physique générale : mécanique",
-                "coursName": "Physique générale : mécanique (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursName": "Physique générale : mécanique (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
                 "prof": "Hébert",

@@ -21,7 +21,7 @@ for (const section of Object.keys(sections)) {
             // on récup les infos de base
 
             const isBA1 = cours.children[2].children[0].children[0].textContent !== '-';
-            const coursName = cours.children[0].children[0].textContent;
+            const coursName = cours.children[0].children[0].children[0].textContent;
             const coursLink = cours.children[0].children[0].children[0].href;
             const prof = cours.children[0].children[2].textContent;
             if (!isBA1) continue;
