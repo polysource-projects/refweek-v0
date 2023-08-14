@@ -51,8 +51,9 @@ for (const section of Object.keys(sections)) {
                 for (const child of hours.children) {
                     idx++;
                     if (child.textContent === ' ') continue;
-                    const hoursCount = parseInt(child.getAttribute('rowspan'));
-                    if (isNaN(hoursCount)) continue;
+                    const isCourse = child.classList.contains('taken');
+                    if (!isCourse) continue;
+                    const hoursCount = parseInt(child.getAttribute('rowspan')) || 1;
                     const isExercice = child.classList.contains('exercice');
                     
                     // en fait ici on doit vérifier si l'heure d'avant il y a un cours ou pas, parce que ça décale les jours

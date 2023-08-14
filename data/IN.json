@@ -258,6 +258,12 @@
                 "prof": "Ball",
                 "lessons": [
                     {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
                         "day": 1,
                         "startHour": 16,
                         "hoursCount": 3,
@@ -278,13 +284,24 @@
                 "prof": "Hébert",
                 "lessons": [
                     {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
                         "day": 3,
                         "startHour": 17,
                         "hoursCount": 2,
                         "isExercice": false
                     },
                     {
-                        "day": 5,
                         "startHour": 17,
                         "hoursCount": 2,
                         "isExercice": true
@@ -301,6 +318,18 @@
                         "day": 2,
                         "startHour": 10,
                         "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 12,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 13,
+                        "hoursCount": 1,
                         "isExercice": true
                     },
                     {
@@ -321,6 +350,18 @@
                         "day": 2,
                         "startHour": 10,
                         "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 12,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 13,
+                        "hoursCount": 1,
                         "isExercice": true
                     },
                     {

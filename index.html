@@ -40,7 +40,7 @@
                     </div>
                 </template>
         </div>
-        <p>Note : les leçons sont affichées en vert, et les exercices en bleu.</p>
+        <p>Note : les leçons sont affichées en bleu, et les exercices en vert.</p>
         <div id="section-calendar" style="height: 600px;">
         </div>
     </div>
@@ -108,7 +108,7 @@
 
                 async fetchCoursDataPerSection () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/2b3d5b71420581b01656cf5078f343cacefeea31/data/' + section + '.json')).json()
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/ab6bfca9f6ebbb5c2fd6d987bb9ad55b736eadb3/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
                             this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList[0].prof;
