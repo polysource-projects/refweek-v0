@@ -5,6 +5,7 @@
             {
                 "coursStandardName": "Advanced information, computation, communication I",
                 "coursName": "Advanced information, computation, communication I (This course focuses on the foundational, discrete mathematics core of advanced computation.)",
+                "coursPrecision": "This course focuses on the foundational, discrete mathematics core of advanced computation.",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/advanced-information-computation-communication-i-CS-101",
                 "prof": "Käser Jacober",
                 "lessons": [
@@ -36,6 +37,7 @@
             {
                 "coursStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (anglais)",
+                "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-anglais-MATH-111-EN",
                 "prof": "Iseli",
                 "lessons": [
@@ -62,6 +64,7 @@
             {
                 "coursStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire\n)",
+                "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
                 "prof": "Testerman",
                 "lessons": [
@@ -119,6 +122,7 @@
             {
                 "coursStandardName": "Analyse I",
                 "coursName": "Analyse I (allemand)",
+                "coursPrecision": "allemand",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-allemand-MATH-101-DE",
                 "prof": "Schmid",
                 "lessons": [
@@ -145,6 +149,7 @@
             {
                 "coursStandardName": "Analyse I",
                 "coursName": "Analyse I (anglais)",
+                "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-anglais-MATH-101-EN",
                 "prof": "Mountford",
                 "lessons": [
@@ -171,6 +176,7 @@
             {
                 "coursStandardName": "Analyse I",
                 "coursName": "Analyse I (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-classe-inversee-MATH-101-PI",
                 "prof": "Garin",
                 "lessons": [
@@ -197,6 +203,7 @@
             {
                 "coursStandardName": "Analyse I",
                 "coursName": "Analyse I (online) (Cours en ligne, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursPrecision": "online",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-online-MATH-101-OL",
                 "prof": "Friedli",
                 "lessons": [
@@ -254,6 +261,7 @@
             {
                 "coursStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (anglais)",
+                "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
                 "prof": "Ball",
                 "lessons": [
@@ -280,6 +288,7 @@
             {
                 "coursStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+                "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
                 "prof": "Hébert",
                 "lessons": [
@@ -312,6 +321,7 @@
             {
                 "coursStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (IN I)",
+                "coursPrecision": "IN I",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-i-PHYS-101-C",
                 "prof": "Galland",
                 "lessons": [
@@ -344,6 +354,7 @@
             {
                 "coursStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (IN II)",
+                "coursPrecision": "IN II",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-ii-PHYS-101-M",
                 "prof": "Blanc",
                 "lessons": [
