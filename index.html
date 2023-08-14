@@ -34,7 +34,7 @@
                         <label x-text="cours.coursStandardName"></label>
                         <select class="form-control" id="cours-select" x-model="selectedProfessorsPerSectionPerCours[selectedSection][cours.coursStandardName]" x-on:change.debounce="updateEDT">
                             <template x-for="lesson in cours.coursList">
-                                <option x-text="lesson.prof + (cours.coursList[0].coursPrecision ? ' (' + cours.coursList[0].coursPrecision + ')' : '')"></option>
+                                <option x-text="lesson.prof + (lesson.coursPrecision ? ' (' + lesson.coursPrecision + ')' : '')"></option>
                             </template>
                         </select>
                     </div>
