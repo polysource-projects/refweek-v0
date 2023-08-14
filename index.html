@@ -10,19 +10,7 @@
 </head>
 <body>
     <div
-        x-data="{
-            selectedSection: 'IN',
-            sections: ['IN', 'MX' , 'SC'],
-            d: ['a'],
-            coursDataPerSection: {},
-
-            async fetchCoursDataPerSection () {
-                this.coursDataPerSection = {
-                    'IN': await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/main/data/IN.json')).json()
-                }
-            }
-        }"
-
+        x-data="store"
         x-init="fetchCoursDataPerSection()"
     >
         <h1>EPFL BA1 Week Builder</h1>
@@ -42,16 +30,17 @@
                 <h4>Cours</h4>
                 <!-- loop and for each cours, allow to choose one professor -->
                 <template x-for="cours in coursDataPerSection[selectedSection]">
-                    <div>
-                    <label x-text="cours.coursStandardName"></label>
-                    <select class="form-control" id="cours-select" x-model="d">
-                        <template x-for="lesson in cours.coursList">
-                            <option x-text="lesson.prof"></option>
-                        </template>
-                    </select>
-                </div>
+                    <div style="margin-top: 15px;">
+                        <label x-text="cours.coursStandardName"></label>
+                        <select class="form-control" id="cours-select" x-model="selectedProfessorsPerSectionPerCours[selectedSection][cours.coursStandardName]" x-on:change.debounce="updateEDT">
+                            <template x-for="lesson in cours.coursList">
+                                <option x-text="lesson.prof"></option>
+                            </template>
+                        </select>
+                    </div>
                 </template>
         </div>
+        <p>Note : les leçons sont affichées en vert, et les exercices en bleu.</p>
         <div id="section-calendar" style="height: 600px;">
         </div>
     </div>
@@ -63,15 +52,15 @@
             defaultView: 'week',
             calendars: [
                 {
-                id: 'cal1',
-                name: 'Personal',
-                backgroundColor: '#03bd9e',
+                    id: 'calendarexercices',
+                    name: 'Exercices',
+                    backgroundColor: '#03bd9e',
                 },
-                {
-                id: 'cal2',
-                name: 'Work',
-                backgroundColor: '#00a9ff',
-                },
+                    {
+                    id: 'calendarlessons',
+                    name: 'Lessons',
+                    backgroundColor: '#00a9ff',
+                }
             ],
             week: {
                 hourStart: 8,
@@ -85,12 +74,6 @@
             useFormPopup: false,
             useDetailPopup: false,
             template: {
-                milestone() {
-                    return '<p></p>';
-                },
-                milestoneTitle() {
-                    return '<p></p>';
-                },
                 weekDayName(dayname) {
                     const newDays = {
                         'Mon': 'Lundi',
@@ -105,7 +88,88 @@
                 },
 
             }
-            });
+        });
+        
+        window.theCalendar = calendar;
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('store', () => ({
+                selectedSection: 'IN',
+                sections: ['IN'],
+                selectedProfessorsPerSectionPerCours: {},
+                coursDataPerSection: {},
+
+                init() {
+                    this.fetchCoursDataPerSection()
+                        .then(() => {
+                            this.updateEDT()
+                        });
+                },
+
+                async fetchCoursDataPerSection () {
+                    for (const section of this.sections) {
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/2b3d5b71420581b01656cf5078f343cacefeea31/data/' + section + '.json')).json()
+                        this.selectedProfessorsPerSectionPerCours[section] = {};
+                        this.coursDataPerSection[section].forEach((cours) => {
+                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList[0].prof;
+                        });
+                    }
+                },
+
+                updateEDT () {
+                    calendar.clear();
+
+                    for (const coursS of this.coursDataPerSection[this.selectedSection]) {
+
+                        for (const cours of coursS.coursList) {
+
+                            for (const lesson of cours.lessons) {
+
+                                if (cours.prof === this.selectedProfessorsPerSectionPerCours[this.selectedSection][cours.coursStandardName]) {
+
+                                    const dayIdx = lesson.day
+                                    const hour = lesson.startHour // 5am
+                                    const duration = lesson.hoursCount // 2 hours
+
+                                    const start = new Date();
+                                    const end = new Date();
+
+                                    start.setDate(start.getDate() + (dayIdx + 7 - start.getDay()) % 7);
+                                    end.setDate(end.getDate() + (dayIdx + 7 - end.getDay()) % 7);
+
+                                    start.setHours(hour);
+                                    end.setHours(hour + duration);
+
+                                    start.setMinutes(0, 0, 0);
+                                    end.setMinutes(0, 0, 0);
+
+                                    console.log({ start, end })
+
+                                    const calendarId = lesson.isExercice ? 'calendarexercices' : 'calendarlessons';
+                                    const id = Math.random().toString(36).substr(2, 9);
+
+                                    calendar.createEvents([
+                                        {
+                                            id,
+                                            calendarId,
+                                            title: cours.coursStandardName,
+                                            category: 'time',
+                                            dueDateClass: '',
+                                            start: start.toISOString(),
+                                            end: end.toISOString(),
+                                        }
+                                    ]);
+
+                                }
+
+                            }
+
+                        }
+                        
+                    }
+                }
+            }));
+        });
     </script>
 </body>
 </html>

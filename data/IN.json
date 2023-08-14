@@ -46,7 +46,7 @@
                         "isExercice": false
                     },
                     {
-                        "day": 3,
+                        "day": 4,
                         "startHour": 14,
                         "hoursCount": 2,
                         "isExercice": false
@@ -72,7 +72,7 @@
                         "isExercice": false
                     },
                     {
-                        "day": 3,
+                        "day": 4,
                         "startHour": 14,
                         "hoursCount": 2,
                         "isExercice": false
@@ -264,7 +264,7 @@
                         "isExercice": false
                     },
                     {
-                        "day": 2,
+                        "day": 3,
                         "startHour": 17,
                         "hoursCount": 2,
                         "isExercice": true
