@@ -115,7 +115,8 @@
                         this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/0eb5d595d5908d6ee3b9cfaa85985ee688872780/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
-                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0].prof;
+                            const c = cours.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0];
+                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = (c.prof + (c.coursPrecision ? ' (' + c.coursPrecision + ')' : ''));
                         });
                     }
                 },
@@ -134,7 +135,7 @@
 
                             for (const lesson of cours.lessons) {
 
-                                if (cours.prof === this.selectedProfessorsPerSectionPerCours[this.selectedSection][cours.coursStandardName]) {
+                                if ((cours.prof + (cours.coursPrecision ? ' (' + cours.coursPrecision + ')' : '')) === this.selectedProfessorsPerSectionPerCours[this.selectedSection][cours.coursStandardName]) {
 
                                     const dayIdx = lesson.day
                                     const hour = lesson.startHour // 5am
