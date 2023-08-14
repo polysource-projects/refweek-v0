@@ -59,7 +59,7 @@ for (const section of Object.keys(sections)) {
                     // en fait ici on doit vérifier si l'heure d'avant il y a un cours ou pas, parce que ça décale les jours
                     // par ex. s'il y a un cours l'heure d'avant le mardi on aura juste un td pour le lundi, le mercredi et le jeudi
 
-                    const lessonsHourBefore = coursData.lessons.filter(l => l.startHour === startHour - 1);
+                    const lessonsHourBefore = coursData.lessons.filter(l => l.startHour === startHour - 1 && l.hoursCount > 1);
                     const daysPresentDansLeTr = [1,2,3,4,5];
                     for (const lessonHourBefore of lessonsHourBefore) {
                         const idx = daysPresentDansLeTr.indexOf(lessonHourBefore.day);
