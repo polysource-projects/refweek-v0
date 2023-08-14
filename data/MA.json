@@ -1,0 +1,169 @@
+[
+    {
+        "coursStandardName": "Algèbre linéaire avancée I",
+        "coursList": [
+            {
+                "coursStandardName": "Algèbre linéaire avancée I",
+                "coursName": "Algèbre linéaire avancée I",
+                "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/algebre-lineaire-avancee-i-MATH-110-A",
+                "prof": "Kressner",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse avancée I",
+        "coursList": [
+            {
+                "coursStandardName": "Analyse avancée I",
+                "coursName": "Analyse avancée I",
+                "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/analyse-avancee-i-MATH-100-A",
+                "prof": "Monod",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursList": [
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique",
+                "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/physique-generale-mecanique-PHYS-101-F",
+                "prof": "Bréchet",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 9,
+                        "hoursCount": 3,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Information, calcul, communication",
+        "coursList": [
+            {
+                "coursStandardName": "Information, calcul, communication",
+                "coursName": "Information, calcul, communication",
+                "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/information-calcul-communication-CS-119-D",
+                "prof": "Chappelier",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 9,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 11,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Structures algébriques",
+        "coursList": [
+            {
+                "coursStandardName": "Structures algébriques",
+                "coursName": "Structures algébriques",
+                "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/structures-algebriques-MATH-113",
+                "prof": "Wyss",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    }
+]

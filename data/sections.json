@@ -1,0 +1,15 @@
+{
+    "informatique": "IN",
+    "architecture": "AR",
+    "chimie-et-genie-chimique": "CGC",
+    "genie-civil": "GC",
+    "genie-mecanique": "GM",
+    "genie-electrique-et-electronique": "EL",
+    "ingenierie-des-sciences-du-vivant": "SV",
+    "mathematiques": "MA",
+    "microtechnique": "MT",
+    "physique": "PH",
+    "science-et-genie-des-materiaux": "MX",
+    "sciences-et-ingenierie-de-l-environnement": "SIE",
+    "systemes-de-communication": "SC"
+}

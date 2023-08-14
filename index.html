@@ -108,12 +108,17 @@
 
                 async fetchCoursDataPerSection () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/59f8daed75e3b0f72b4740d451a852ad25cd8ba4/data/' + section + '.json')).json()
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/30f6fd4f0790feac3de36e52835ca78ded3dbb2c/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
-                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList[0].prof;
+                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0].prof;
                         });
                     }
+                },
+
+                async fetchSections () {
+                    const sections = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/30f6fd4f0790feac3de36e52835ca78ded3dbb2c/data/sections.json')).json();
+                    this.sections = Object.values(sections)
                 },
 
                 updateEDT () {

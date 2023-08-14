@@ -1,0 +1,145 @@
+[
+    {
+        "coursStandardName": "Algèbre linéaire avancée I",
+        "coursList": [
+            {
+                "coursStandardName": "Algèbre linéaire avancée I",
+                "coursName": "Algèbre linéaire avancée I",
+                "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/algebre-lineaire-avancee-i-MATH-110-B",
+                "prof": "Testerman",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 9,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 12,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse avancée I",
+        "coursList": [
+            {
+                "coursStandardName": "Analyse avancée I",
+                "coursName": "Analyse avancée I",
+                "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/analyse-avancee-i-MATH-100-B",
+                "prof": "Genoud",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 12,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique avancée I",
+        "coursList": [
+            {
+                "coursStandardName": "Physique avancée I",
+                "coursName": "Physique avancée I (mécanique)",
+                "coursPrecision": "mécanique",
+                "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/physique-avancee-i-mecanique-PHYS-100",
+                "prof": "Ricci",
+                "lessons": [
+                    {
+                        "day": 5,
+                        "startHour": 9,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Information, calcul, communication",
+        "coursList": [
+            {
+                "coursStandardName": "Information, calcul, communication",
+                "coursName": "Information, calcul, communication",
+                "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/information-calcul-communication-CS-119-D",
+                "prof": "Chappelier",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 9,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 11,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    }
+]

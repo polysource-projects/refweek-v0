@@ -1,0 +1,435 @@
+[
+    {
+        "coursStandardName": "Algèbre linéaire",
+        "coursList": [
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/algebre-lineaire-anglais-MATH-111-EN",
+                "prof": "Iseli",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
+                "prof": "Testerman",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/algebre-lineaire-MATH-111-C",
+                "prof": "Pouchon",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursList": [
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (allemand)",
+                "coursPrecision": "allemand",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/analyse-i-allemand-MATH-101-DE",
+                "prof": "Schmid",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/analyse-i-anglais-MATH-101-EN",
+                "prof": "Mountford",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/analyse-i-classe-inversee-MATH-101-PI",
+                "prof": "Garin",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (online)",
+                "coursPrecision": "online",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/analyse-i-online-MATH-101-OL",
+                "prof": "Friedli",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/analyse-i-MATH-101-C",
+                "prof": "Friedli",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursList": [
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
+                "prof": "Ball",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 16,
+                        "hoursCount": 3,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
+                "prof": "Hébert",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/physique-generale-mecanique-PHYS-101-D",
+                "prof": "Müllhaupt",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 15,
+                        "hoursCount": 3,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Construction mécanique I",
+        "coursList": [
+            {
+                "coursStandardName": "Construction mécanique I",
+                "coursName": "Construction mécanique I (pour GM)",
+                "coursPrecision": "pour GM",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/construction-mecanique-i-pour-gm-ME-101",
+                "prof": "Lacour, Soubielle",
+                "lessons": [
+                    {
+                        "day": 5,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 14,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 14,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Matériaux: de la chimie aux propriétés",
+        "coursList": [
+            {
+                "coursStandardName": "Matériaux: de la chimie aux propriétés",
+                "coursName": "Matériaux: de la chimie aux propriétés",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/materiaux-de-la-chimie-aux-proprietes-MSE-101-A",
+                "prof": "Michaud",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 11,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 13,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Sciences et technologies de l'électricité",
+        "coursList": [
+            {
+                "coursStandardName": "Sciences et technologies de l'électricité",
+                "coursName": "Sciences et technologies de l'électricité",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/sciences-et-technologies-de-l-electricite-EE-106",
+                "prof": "Zoia",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 18,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,189 @@
+[
+    {
+        "coursStandardName": "Géométrie pour architectes I",
+        "coursList": [
+            {
+                "coursStandardName": "Géométrie pour architectes I",
+                "coursName": "Géométrie pour architectes I",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/geometrie-pour-architectes-i-MATH-124",
+                "prof": "Ismail",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 12,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Mathématiques",
+        "coursList": [
+            {
+                "coursStandardName": "Mathématiques",
+                "coursName": "Mathématiques",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/mathematiques-MATH-189",
+                "prof": "Burzio",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Modélisation numérique",
+        "coursList": [
+            {
+                "coursStandardName": "Modélisation numérique",
+                "coursName": "Modélisation numérique",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/modelisation-numerique-AR-114",
+                "prof": "Mignon",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 15,
+                        "hoursCount": 3,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Tomographie architecturale",
+        "coursList": [
+            {
+                "coursStandardName": "Tomographie architecturale",
+                "coursName": "Tomographie architecturale",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/tomographie-architecturale-AR-129",
+                "prof": "Abenia, Taillieu",
+                "lessons": [
+                    {
+                        "day": 5,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Art fundaments",
+        "coursList": [
+            {
+                "coursStandardName": "Art fundaments",
+                "coursName": "Art fundaments",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/art-fundaments-AR-119",
+                "prof": "Fröhlich, Rochat",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 9,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Histoire et théories de l'environnement I",
+        "coursList": [
+            {
+                "coursStandardName": "Histoire et théories de l'environnement I",
+                "coursName": "Histoire et théories de l'environnement I",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/histoire-et-theories-de-l-environnement-i-AR-154",
+                "prof": "Marot",
+                "lessons": [
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Théorie et critique du projet BA1",
+        "coursList": [
+            {
+                "coursStandardName": "Théorie et critique du projet BA1",
+                "coursName": "Théorie et critique du projet BA1",
+                "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/theorie-et-critique-du-projet-ba1-AR-101",
+                "prof": "Dietz, Seewang",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 4,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 4,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    }
+]

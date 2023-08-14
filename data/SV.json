@@ -1,0 +1,391 @@
+[
+    {
+        "coursStandardName": "Algèbre linéaire",
+        "coursList": [
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/algebre-lineaire-anglais-MATH-111-EN",
+                "prof": "Iseli",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
+                "prof": "Testerman",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Algèbre linéaire",
+                "coursName": "Algèbre linéaire",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/algebre-lineaire-MATH-111-F",
+                "prof": "Cavallin",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursList": [
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (allemand)",
+                "coursPrecision": "allemand",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/analyse-i-allemand-MATH-101-DE",
+                "prof": "Schmid",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/analyse-i-anglais-MATH-101-EN",
+                "prof": "Mountford",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/analyse-i-classe-inversee-MATH-101-PI",
+                "prof": "Garin",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I (online)",
+                "coursPrecision": "online",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/analyse-i-online-MATH-101-OL",
+                "prof": "Friedli",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Analyse I",
+                "coursName": "Analyse I",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/analyse-i-MATH-101-F",
+                "prof": "Strütt",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 4,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursList": [
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique (anglais)",
+                "coursPrecision": "anglais",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
+                "prof": "Ball",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 16,
+                        "hoursCount": 3,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique (classe inversée)",
+                "coursPrecision": "classe inversée",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
+                "prof": "Hébert",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            },
+            {
+                "coursStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/physique-generale-mecanique-PHYS-101-J",
+                "prof": "Kneib",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Chimie générale avancée",
+        "coursList": [
+            {
+                "coursStandardName": "Chimie générale avancée",
+                "coursName": "Chimie générale avancée",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/chimie-generale-avancee-CH-160-E",
+                "prof": "Terrettaz",
+                "lessons": [
+                    {
+                        "day": 3,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 16,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Information, calcul, communication",
+        "coursList": [
+            {
+                "coursStandardName": "Information, calcul, communication",
+                "coursName": "Information, calcul, communication",
+                "coursLink": "/studyplan/fr/propedeutique/ingenierie-des-sciences-du-vivant/coursebook/information-calcul-communication-CS-119-G",
+                "prof": "Jobstmann, Sam",
+                "lessons": [
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 9,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 12,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    }
+                ]
+            }
+        ]
+    }
+]

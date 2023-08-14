@@ -5,7 +5,19 @@ import { writeFileSync } from 'fs';
 const fetchDocument = (link) => fetch(link).then(res => res.text()).then(body => new JSDOM.JSDOM(body).window.document);
 
 const sections = {
-    'informatique': 'IN'
+    'informatique': 'IN',
+    'architecture': 'AR',
+    'chimie-et-genie-chimique': 'CGC',
+    'genie-civil': 'GC',
+    'genie-mecanique': 'GM',
+    'genie-electrique-et-electronique': 'EL',
+    'ingenierie-des-sciences-du-vivant': 'SV',
+    'mathematiques': 'MA',
+    'microtechnique': 'MT',
+    'physique': 'PH',
+    'science-et-genie-des-materiaux': 'MX',
+    'sciences-et-ingenierie-de-l-environnement': 'SIE',
+    'systemes-de-communication': 'SC'
 }
 
 for (const section of Object.keys(sections)) {
@@ -21,7 +33,8 @@ for (const section of Object.keys(sections)) {
             // on récup les infos de base
 
             const isBA1 = cours.children[2].children[0].children[0].textContent !== '-';
-            const coursName = cours.children[0].children[0].children[0].textContent;
+            const coursName = cours.children[0].children[0]?.children[0]?.textContent;
+            if (!coursName) continue;
             const coursLink = cours.children[0].children[0].children[0].href;
             const prof = cours.children[0].children[2].textContent;
             if (!isBA1) continue;
@@ -99,6 +112,10 @@ for (const section of Object.keys(sections)) {
         }
 
         writeFileSync(`../data/${sections[section]}.json`, JSON.stringify(formattedCoursDataList, null, 4));
+
+        console.log(`Fetched ${section}.`);
         
-    })
+    });
+
+    writeFileSync('../data/sections.json', JSON.stringify(sections, null, 4));
 }
