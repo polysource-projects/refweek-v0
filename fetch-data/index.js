@@ -29,6 +29,7 @@ for (const section of Object.keys(sections)) {
             const coursData = {
                 coursStandardName: coursName.split(' (')[0],
                 coursName,
+                coursPrecision: coursName.split('(')[1]?.split(')')[0],
                 coursLink,
                 prof,
                 lessons: []

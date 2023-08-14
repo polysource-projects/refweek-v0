@@ -108,7 +108,7 @@
 
                 async fetchCoursDataPerSection () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/c31177e7f368282957c370513bb605b4ed9873e2/data/' + section + '.json')).json()
+                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/6778bd891e4cce3789abbc23a055c4168aebf1af/data/' + section + '.json')).json()
                         this.selectedProfessorsPerSectionPerCours[section] = {};
                         this.coursDataPerSection[section].forEach((cours) => {
                             this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = cours.coursList[0].prof;
