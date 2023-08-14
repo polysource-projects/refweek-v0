@@ -1,0 +1,336 @@
+[
+    {
+        "coursStandardName": "Advanced information, computation, communication I",
+        "coursName": "Advanced information, computation, communication I (This course focuses on the foundational, discrete mathematics core of advanced computation.)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/advanced-information-computation-communication-i-CS-101",
+        "prof": "Käser Jacober",
+        "lessons": [
+            {
+                "day": 2,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 5,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            },
+            {
+                "day": 3,
+                "startHour": 15,
+                "hoursCount": 2,
+                "isExercice": false
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Algèbre linéaire",
+        "coursName": "Algèbre linéaire (anglais)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-anglais-MATH-111-EN",
+        "prof": "Iseli",
+        "lessons": [
+            {
+                "day": 2,
+                "startHour": 13,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 14,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 4,
+                "startHour": 16,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Algèbre linéaire",
+        "coursName": "Algèbre linéaire (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire\n)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
+        "prof": "Testerman",
+        "lessons": [
+            {
+                "day": 2,
+                "startHour": 13,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 14,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 4,
+                "startHour": 16,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Algèbre linéaire",
+        "coursName": "Algèbre linéaire",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-MATH-111-E",
+        "prof": "Boumal",
+        "lessons": [
+            {
+                "day": 4,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 5,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": true
+            },
+            {
+                "day": 1,
+                "startHour": 13,
+                "hoursCount": 2,
+                "isExercice": false
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursName": "Analyse I (allemand)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-allemand-MATH-101-DE",
+        "prof": "Schmid",
+        "lessons": [
+            {
+                "day": 1,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 1,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursName": "Analyse I (anglais)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-anglais-MATH-101-EN",
+        "prof": "Mountford",
+        "lessons": [
+            {
+                "day": 1,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursName": "Analyse I (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-classe-inversee-MATH-101-PI",
+        "prof": "Garin",
+        "lessons": [
+            {
+                "day": 3,
+                "startHour": 8,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 1,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursName": "Analyse I (online) (Cours en ligne, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-online-MATH-101-OL",
+        "prof": "Friedli",
+        "lessons": [
+            {
+                "day": 1,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 2,
+                "startHour": 17,
+                "hoursCount": 1,
+                "isExercice": true
+            },
+            {
+                "day": 3,
+                "startHour": 17,
+                "hoursCount": 1,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Analyse I",
+        "coursName": "Analyse I",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-MATH-101-E",
+        "prof": "Lachowska",
+        "lessons": [
+            {
+                "day": 1,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 3,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 4,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursName": "Physique générale : mécanique (anglais)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
+        "prof": "Ball",
+        "lessons": [
+            {
+                "day": 1,
+                "startHour": 16,
+                "hoursCount": 3,
+                "isExercice": false
+            },
+            {
+                "day": 2,
+                "startHour": 17,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursName": "Physique générale : mécanique (classe inversée) (Cours en classe inversée, merci de consulter https://go.epfl.ch/classes-inversees avant de vous inscrire)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
+        "prof": "Hébert",
+        "lessons": [
+            {
+                "day": 3,
+                "startHour": 17,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 5,
+                "startHour": 17,
+                "hoursCount": 2,
+                "isExercice": true
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursName": "Physique générale : mécanique (IN I)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-i-PHYS-101-C",
+        "prof": "Galland",
+        "lessons": [
+            {
+                "day": 2,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            },
+            {
+                "day": 3,
+                "startHour": 17,
+                "hoursCount": 2,
+                "isExercice": false
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Physique générale : mécanique",
+        "coursName": "Physique générale : mécanique (IN II)",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-ii-PHYS-101-M",
+        "prof": "Blanc",
+        "lessons": [
+            {
+                "day": 2,
+                "startHour": 10,
+                "hoursCount": 2,
+                "isExercice": true
+            },
+            {
+                "day": 3,
+                "startHour": 17,
+                "hoursCount": 2,
+                "isExercice": false
+            }
+        ]
+    },
+    {
+        "coursStandardName": "Introduction à la programmation",
+        "coursName": "Introduction à la programmation",
+        "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/introduction-a-la-programmation-CS-107",
+        "prof": "Sam",
+        "lessons": [
+            {
+                "day": 3,
+                "startHour": 13,
+                "hoursCount": 2,
+                "isExercice": false
+            },
+            {
+                "day": 5,
+                "startHour": 13,
+                "hoursCount": 3,
+                "isExercice": true
+            }
+        ]
+    }
+]

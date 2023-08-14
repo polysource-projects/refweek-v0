@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPFL Week Builder</title>
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div x-data="{
+        selectedSection: 'IN',
+        sections: ['IN', 'MX' , 'SC'],
+        d: ['a'],
+        coursDataPerSection: {
+            'IN': [
+                {
+                    coursName: 'Analyse I',
+                    coursList: [
+                        {
+                            professor: 'Garin',
+                            lessons: [
+                                {
+                                    day: 1,
+                                    start: 8,
+                                    end: 10,
+                                    type: 'exercices'
+                                }
+                            ]
+                        },
+                        {
+                            professor: 'Mira',
+                            lessons: [
+                                {
+                                    day: 1,
+                                    start: 8,
+                                    end: 12,
+                                    type: 'exercices'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    coursName: 'Algèbre Linéaire I',
+                    coursList: [
+                        {
+                            professor: 'Genbre',
+                            lessons: [
+                                {
+                                    day: 1,
+                                    start: 8,
+                                    end: 10,
+                                    type: 'exercices'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }">
+        <h1>EPFL BA1 Week Builder</h1>
+        <p>Choisissez une section puis sélectionnez vos cours en fonction du format (inversé, online ou classique), du professeur (ex. manière d'enseigner, examens, ancienneté) et de la langue (anglais, allemand ou français).</p>
+        <div id="section-form">
+            <div class="form-group">
+                <h4>Section</h4>
+                <select class="form-control" id="section-select" x-model="selectedSection">
+                    <template x-for="section in sections">
+                        <option x-text="section"></option>
+                    </template>
+                </select>
+            </div>
+        </div>
+        <div id="cours-form">
+            <div class="form-group">
+                <h4>Cours</h4>
+                <!-- loop and for each cours, allow to choose one professor -->
+                <template x-for="cours in coursDataPerSection[selectedSection]">
+                    <div>
+                    <label x-text="cours.coursName"></label>
+                    <select class="form-control" id="cours-select" x-model="d">
+                        <template x-for="lesson in cours.coursList">
+                            <option x-text="lesson.professor"></option>
+                        </template>
+                    </select>
+                </div>
+                </template>
+        </div>
+        <div id="section-calendar" style="height: 600px;">
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+    <script>
+        const calendar = new tui.Calendar('#section-calendar', {
+            defaultView: 'week',
+            calendars: [
+                {
+                id: 'cal1',
+                name: 'Personal',
+                backgroundColor: '#03bd9e',
+                },
+                {
+                id: 'cal2',
+                name: 'Work',
+                backgroundColor: '#00a9ff',
+                },
+            ],
+            week: {
+                hourStart: 8,
+                hourEnd: 19,
+                eventView: true,
+                taskView: false,
+                alldayView: false,
+                narrowWeekend: true
+            },
+            isReadOnly: true,
+            useFormPopup: false,
+            useDetailPopup: false,
+            template: {
+                milestone() {
+                    return '<p></p>';
+                },
+                milestoneTitle() {
+                    return '<p></p>';
+                },
+                weekDayName(dayname) {
+                    const newDays = {
+                        'Mon': 'Lundi',
+                        'Tue': 'Mardi',
+                        'Wed': 'Mercredi',
+                        'Thu': 'Jeudi',
+                        'Fri': 'Vendredi',
+                        'Sat': 'Samedi',
+                        'Sun': 'Dimanche'
+                    }
+                    return newDays[dayname.dayName];
+                },
+
+            }
+            });
+    </script>
+</body>
+</html>

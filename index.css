@@ -1,0 +1,17 @@
+body {
+    margin: 30px;
+}
+
+.toastui-calendar-timegrid {
+    height: 100%;
+    /* fit-content or auto(IE) */
+    min-height: fit-content;
+}
+
+.toastui-calendar-panel:not(.toastui-calendar-time).toastui-calendar-panel:not(.toastui-calendar-time) {
+    overflow-y: hidden;
+}
+
+.toastui-calendar-panel.toastui-calendar-panel {
+    overflow-y: hidden;
+}
