@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Algèbre linéaire",
+        "subjectStandardName": "Algèbre linéaire",
         "coursList": [
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (anglais)",
+                "coursDisplayName": "Iseli (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/algebre-lineaire-anglais-MATH-111-EN",
                 "prof": "Iseli",
@@ -30,8 +31,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (classe inversée)",
+                "coursDisplayName": "Testerman (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
                 "prof": "Testerman",
@@ -57,8 +59,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire",
+                "coursDisplayName": "Deparis",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/algebre-lineaire-MATH-111-A",
                 "prof": "Deparis",
                 "lessons": [
@@ -85,11 +88,12 @@
         ]
     },
     {
-        "coursStandardName": "Analyse I",
+        "subjectStandardName": "Analyse I",
         "coursList": [
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (allemand)",
+                "coursDisplayName": "Schmid (allemand)",
                 "coursPrecision": "allemand",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/analyse-i-allemand-MATH-101-DE",
                 "prof": "Schmid",
@@ -115,8 +119,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (anglais)",
+                "coursDisplayName": "Mountford (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/analyse-i-anglais-MATH-101-EN",
                 "prof": "Mountford",
@@ -142,8 +147,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (classe inversée)",
+                "coursDisplayName": "Garin (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/analyse-i-classe-inversee-MATH-101-PI",
                 "prof": "Garin",
@@ -169,8 +175,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (online)",
+                "coursDisplayName": "Friedli (online)",
                 "coursPrecision": "online",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/analyse-i-online-MATH-101-OL",
                 "prof": "Friedli",
@@ -196,8 +203,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I",
+                "coursDisplayName": "Mila",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/analyse-i-MATH-101-A",
                 "prof": "Mila",
                 "lessons": [
@@ -224,11 +232,12 @@
         ]
     },
     {
-        "coursStandardName": "Physique générale : mécanique",
+        "subjectStandardName": "Physique générale : mécanique",
         "coursList": [
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (anglais)",
+                "coursDisplayName": "Ball (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
                 "prof": "Ball",
@@ -254,8 +263,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (classe inversée)",
+                "coursDisplayName": "Hébert (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
                 "prof": "Hébert",
@@ -287,8 +297,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique",
+                "coursDisplayName": "Hogge",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/physique-generale-mecanique-PHYS-101-A",
                 "prof": "Hogge",
                 "lessons": [
@@ -321,11 +332,12 @@
         ]
     },
     {
-        "coursStandardName": "Chimie générale",
+        "subjectStandardName": "Chimie générale",
         "coursList": [
             {
-                "coursStandardName": "Chimie générale",
+                "subjectStandardName": "Chimie générale",
                 "coursName": "Chimie générale",
+                "coursDisplayName": "Terrettaz",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/chimie-generale-CH-160-B",
                 "prof": "Terrettaz",
                 "lessons": [
@@ -346,11 +358,12 @@
         ]
     },
     {
-        "coursStandardName": "Information, calcul, communication",
+        "subjectStandardName": "Information, calcul, communication",
         "coursList": [
             {
-                "coursStandardName": "Information, calcul, communication",
+                "subjectStandardName": "Information, calcul, communication",
                 "coursName": "Information, calcul, communication",
+                "coursDisplayName": "Lévêque, Wang",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/information-calcul-communication-CS-119-H",
                 "prof": "Lévêque, Wang",
                 "lessons": [
@@ -383,11 +396,12 @@
         ]
     },
     {
-        "coursStandardName": "Structures I",
+        "subjectStandardName": "Structures I",
         "coursList": [
             {
-                "coursStandardName": "Structures I",
+                "subjectStandardName": "Structures I",
                 "coursName": "Structures I",
+                "coursDisplayName": "Burdet",
                 "coursLink": "/studyplan/fr/propedeutique/genie-civil/coursebook/structures-i-CIVIL-122",
                 "prof": "Burdet",
                 "lessons": [

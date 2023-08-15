@@ -33,16 +33,23 @@ for (const section of Object.keys(sections)) {
             // on récup les infos de base
 
             const isBA1 = cours.children[2].children[0].children[0].textContent !== '-';
-            const coursName = cours.children[0].children[0]?.children[0]?.textContent;
-            if (!coursName) continue;
+            const subjectCompleteName = cours.children[0].children[0]?.children[0]?.textContent;
+            if (!subjectCompleteName) continue;
             const coursLink = cours.children[0].children[0].children[0].href;
             const prof = cours.children[0].children[2].textContent;
             if (!isBA1) continue;
 
+            const coursPrecision = subjectCompleteName.split('(')[1]?.split(')')[0];
+            const coursName = subjectCompleteName.split(' (')[0] + (coursPrecision ? ` (${coursPrecision})` : '');
+            const coursDisplayName = prof + (coursPrecision ? ` (${coursPrecision})` : '');
+
+            const subjectStandardName = coursName.split(' (')[0];
+
             const coursData = {
-                coursStandardName: coursName.split(' (')[0],
+                subjectStandardName,
                 coursName,
-                coursPrecision: coursName.split('(')[1]?.split(')')[0],
+                coursDisplayName,
+                coursPrecision,
                 coursLink,
                 prof,
                 lessons: []
@@ -94,24 +101,24 @@ for (const section of Object.keys(sections)) {
 
         }
 
-        const formattedCoursDataList = [];
+        const formattedSubjectDataList = [];
 
         // regroup les cours qui ont le même nom coursStandardName
 
         for (const coursData of coursDataList) {
-            const coursStandardName = coursData.coursStandardName;
-            const existingCours = formattedCoursDataList.find(c => c.coursStandardName === coursStandardName);
-            if (existingCours) {
-                existingCours.coursList.push(coursData);
+            const subjectStandardName = coursData.subjectStandardName;
+            const existingSubject = formattedSubjectDataList.find(c => c.subjectStandardName === subjectStandardName);
+            if (existingSubject) {
+                existingSubject.coursList.push(coursData);
             } else {
-                formattedCoursDataList.push({
-                    coursStandardName,
+                formattedSubjectDataList.push({
+                    subjectStandardName,
                     coursList: [coursData]
                 });
             }
         }
 
-        writeFileSync(`../data/${sections[section]}.json`, JSON.stringify(formattedCoursDataList, null, 4));
+        writeFileSync(`../data/${sections[section]}.json`, JSON.stringify(formattedSubjectDataList, null, 4));
 
         console.log(`Fetched ${section}.`);
         

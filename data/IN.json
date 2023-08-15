@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Advanced information, computation, communication I",
+        "subjectStandardName": "Advanced information, computation, communication I",
         "coursList": [
             {
-                "coursStandardName": "Advanced information, computation, communication I",
+                "subjectStandardName": "Advanced information, computation, communication I",
                 "coursName": "Advanced information, computation, communication I",
+                "coursDisplayName": "Käser Jacober",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/advanced-information-computation-communication-i-CS-101",
                 "prof": "Käser Jacober",
                 "lessons": [
@@ -31,11 +32,12 @@
         ]
     },
     {
-        "coursStandardName": "Algèbre linéaire",
+        "subjectStandardName": "Algèbre linéaire",
         "coursList": [
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (anglais)",
+                "coursDisplayName": "Iseli (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-anglais-MATH-111-EN",
                 "prof": "Iseli",
@@ -61,8 +63,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (classe inversée)",
+                "coursDisplayName": "Testerman (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
                 "prof": "Testerman",
@@ -88,8 +91,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire",
+                "coursDisplayName": "Boumal",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/algebre-lineaire-MATH-111-E",
                 "prof": "Boumal",
                 "lessons": [
@@ -116,11 +120,12 @@
         ]
     },
     {
-        "coursStandardName": "Analyse I",
+        "subjectStandardName": "Analyse I",
         "coursList": [
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (allemand)",
+                "coursDisplayName": "Schmid (allemand)",
                 "coursPrecision": "allemand",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-allemand-MATH-101-DE",
                 "prof": "Schmid",
@@ -146,8 +151,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (anglais)",
+                "coursDisplayName": "Mountford (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-anglais-MATH-101-EN",
                 "prof": "Mountford",
@@ -173,8 +179,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (classe inversée)",
+                "coursDisplayName": "Garin (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-classe-inversee-MATH-101-PI",
                 "prof": "Garin",
@@ -200,8 +207,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (online)",
+                "coursDisplayName": "Friedli (online)",
                 "coursPrecision": "online",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-online-MATH-101-OL",
                 "prof": "Friedli",
@@ -227,8 +235,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I",
+                "coursDisplayName": "Lachowska",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/analyse-i-MATH-101-E",
                 "prof": "Lachowska",
                 "lessons": [
@@ -255,11 +264,12 @@
         ]
     },
     {
-        "coursStandardName": "Physique générale : mécanique",
+        "subjectStandardName": "Physique générale : mécanique",
         "coursList": [
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (anglais)",
+                "coursDisplayName": "Ball (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
                 "prof": "Ball",
@@ -285,8 +295,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (classe inversée)",
+                "coursDisplayName": "Hébert (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
                 "prof": "Hébert",
@@ -318,8 +329,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (IN I)",
+                "coursDisplayName": "Galland (IN I)",
                 "coursPrecision": "IN I",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-i-PHYS-101-C",
                 "prof": "Galland",
@@ -351,8 +363,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (IN II)",
+                "coursDisplayName": "Blanc (IN II)",
                 "coursPrecision": "IN II",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/physique-generale-mecanique-in-ii-PHYS-101-M",
                 "prof": "Blanc",
@@ -386,11 +399,12 @@
         ]
     },
     {
-        "coursStandardName": "Introduction à la programmation",
+        "subjectStandardName": "Introduction à la programmation",
         "coursList": [
             {
-                "coursStandardName": "Introduction à la programmation",
+                "subjectStandardName": "Introduction à la programmation",
                 "coursName": "Introduction à la programmation",
+                "coursDisplayName": "Sam",
                 "coursLink": "/studyplan/fr/propedeutique/informatique/coursebook/introduction-a-la-programmation-CS-107",
                 "prof": "Sam",
                 "lessons": [

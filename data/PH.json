@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Algèbre linéaire avancée I",
+        "subjectStandardName": "Algèbre linéaire avancée I",
         "coursList": [
             {
-                "coursStandardName": "Algèbre linéaire avancée I",
+                "subjectStandardName": "Algèbre linéaire avancée I",
                 "coursName": "Algèbre linéaire avancée I",
+                "coursDisplayName": "Testerman",
                 "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/algebre-lineaire-avancee-i-MATH-110-B",
                 "prof": "Testerman",
                 "lessons": [
@@ -31,11 +32,12 @@
         ]
     },
     {
-        "coursStandardName": "Analyse avancée I",
+        "subjectStandardName": "Analyse avancée I",
         "coursList": [
             {
-                "coursStandardName": "Analyse avancée I",
+                "subjectStandardName": "Analyse avancée I",
                 "coursName": "Analyse avancée I",
+                "coursDisplayName": "Genoud",
                 "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/analyse-avancee-i-MATH-100-B",
                 "prof": "Genoud",
                 "lessons": [
@@ -68,11 +70,12 @@
         ]
     },
     {
-        "coursStandardName": "Physique avancée I",
+        "subjectStandardName": "Physique avancée I",
         "coursList": [
             {
-                "coursStandardName": "Physique avancée I",
+                "subjectStandardName": "Physique avancée I",
                 "coursName": "Physique avancée I (mécanique)",
+                "coursDisplayName": "Ricci (mécanique)",
                 "coursPrecision": "mécanique",
                 "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/physique-avancee-i-mecanique-PHYS-100",
                 "prof": "Ricci",
@@ -106,11 +109,12 @@
         ]
     },
     {
-        "coursStandardName": "Information, calcul, communication",
+        "subjectStandardName": "Information, calcul, communication",
         "coursList": [
             {
-                "coursStandardName": "Information, calcul, communication",
+                "subjectStandardName": "Information, calcul, communication",
                 "coursName": "Information, calcul, communication",
+                "coursDisplayName": "Chappelier",
                 "coursLink": "/studyplan/fr/propedeutique/physique/coursebook/information-calcul-communication-CS-119-D",
                 "prof": "Chappelier",
                 "lessons": [

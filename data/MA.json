@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Algèbre linéaire avancée I",
+        "subjectStandardName": "Algèbre linéaire avancée I",
         "coursList": [
             {
-                "coursStandardName": "Algèbre linéaire avancée I",
+                "subjectStandardName": "Algèbre linéaire avancée I",
                 "coursName": "Algèbre linéaire avancée I",
+                "coursDisplayName": "Kressner",
                 "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/algebre-lineaire-avancee-i-MATH-110-A",
                 "prof": "Kressner",
                 "lessons": [
@@ -37,11 +38,12 @@
         ]
     },
     {
-        "coursStandardName": "Analyse avancée I",
+        "subjectStandardName": "Analyse avancée I",
         "coursList": [
             {
-                "coursStandardName": "Analyse avancée I",
+                "subjectStandardName": "Analyse avancée I",
                 "coursName": "Analyse avancée I",
+                "coursDisplayName": "Monod",
                 "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/analyse-avancee-i-MATH-100-A",
                 "prof": "Monod",
                 "lessons": [
@@ -74,11 +76,12 @@
         ]
     },
     {
-        "coursStandardName": "Physique générale : mécanique",
+        "subjectStandardName": "Physique générale : mécanique",
         "coursList": [
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique",
+                "coursDisplayName": "Bréchet",
                 "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/physique-generale-mecanique-PHYS-101-F",
                 "prof": "Bréchet",
                 "lessons": [
@@ -105,11 +108,12 @@
         ]
     },
     {
-        "coursStandardName": "Information, calcul, communication",
+        "subjectStandardName": "Information, calcul, communication",
         "coursList": [
             {
-                "coursStandardName": "Information, calcul, communication",
+                "subjectStandardName": "Information, calcul, communication",
                 "coursName": "Information, calcul, communication",
+                "coursDisplayName": "Chappelier",
                 "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/information-calcul-communication-CS-119-D",
                 "prof": "Chappelier",
                 "lessons": [
@@ -142,11 +146,12 @@
         ]
     },
     {
-        "coursStandardName": "Structures algébriques",
+        "subjectStandardName": "Structures algébriques",
         "coursList": [
             {
-                "coursStandardName": "Structures algébriques",
+                "subjectStandardName": "Structures algébriques",
                 "coursName": "Structures algébriques",
+                "coursDisplayName": "Wyss",
                 "coursLink": "/studyplan/fr/propedeutique/mathematiques/coursebook/structures-algebriques-MATH-113",
                 "prof": "Wyss",
                 "lessons": [

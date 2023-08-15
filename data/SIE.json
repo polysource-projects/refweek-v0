@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Algèbre linéaire",
+        "subjectStandardName": "Algèbre linéaire",
         "coursList": [
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (anglais)",
+                "coursDisplayName": "Iseli (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/algebre-lineaire-anglais-MATH-111-EN",
                 "prof": "Iseli",
@@ -30,8 +31,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire (classe inversée)",
+                "coursDisplayName": "Testerman (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/algebre-lineaire-classe-inversee-MATH-111-PI",
                 "prof": "Testerman",
@@ -57,8 +59,9 @@
                 ]
             },
             {
-                "coursStandardName": "Algèbre linéaire",
+                "subjectStandardName": "Algèbre linéaire",
                 "coursName": "Algèbre linéaire",
+                "coursDisplayName": "Deparis",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/algebre-lineaire-MATH-111-A",
                 "prof": "Deparis",
                 "lessons": [
@@ -85,11 +88,12 @@
         ]
     },
     {
-        "coursStandardName": "Analyse I",
+        "subjectStandardName": "Analyse I",
         "coursList": [
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (allemand)",
+                "coursDisplayName": "Schmid (allemand)",
                 "coursPrecision": "allemand",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/analyse-i-allemand-MATH-101-DE",
                 "prof": "Schmid",
@@ -115,8 +119,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (anglais)",
+                "coursDisplayName": "Mountford (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/analyse-i-anglais-MATH-101-EN",
                 "prof": "Mountford",
@@ -142,8 +147,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (classe inversée)",
+                "coursDisplayName": "Garin (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/analyse-i-classe-inversee-MATH-101-PI",
                 "prof": "Garin",
@@ -169,8 +175,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I (online)",
+                "coursDisplayName": "Friedli (online)",
                 "coursPrecision": "online",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/analyse-i-online-MATH-101-OL",
                 "prof": "Friedli",
@@ -196,8 +203,9 @@
                 ]
             },
             {
-                "coursStandardName": "Analyse I",
+                "subjectStandardName": "Analyse I",
                 "coursName": "Analyse I",
+                "coursDisplayName": "Mila",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/analyse-i-MATH-101-A",
                 "prof": "Mila",
                 "lessons": [
@@ -224,11 +232,12 @@
         ]
     },
     {
-        "coursStandardName": "Chimie générale avancée",
+        "subjectStandardName": "Chimie générale avancée",
         "coursList": [
             {
-                "coursStandardName": "Chimie générale avancée",
+                "subjectStandardName": "Chimie générale avancée",
                 "coursName": "Chimie générale avancée",
+                "coursDisplayName": "Andres, Terrettaz",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/chimie-generale-avancee-CH-160-F",
                 "prof": "Andres, Terrettaz",
                 "lessons": [
@@ -255,11 +264,12 @@
         ]
     },
     {
-        "coursStandardName": "Physique générale : mécanique",
+        "subjectStandardName": "Physique générale : mécanique",
         "coursList": [
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (anglais)",
+                "coursDisplayName": "Ball (anglais)",
                 "coursPrecision": "anglais",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/physique-generale-mecanique-anglais-PHYS-101-EN",
                 "prof": "Ball",
@@ -285,8 +295,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique (classe inversée)",
+                "coursDisplayName": "Hébert (classe inversée)",
                 "coursPrecision": "classe inversée",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/physique-generale-mecanique-classe-inversee-PHYS-101-L",
                 "prof": "Hébert",
@@ -318,8 +329,9 @@
                 ]
             },
             {
-                "coursStandardName": "Physique générale : mécanique",
+                "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique",
+                "coursDisplayName": "Hogge",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/physique-generale-mecanique-PHYS-101-A",
                 "prof": "Hogge",
                 "lessons": [
@@ -352,11 +364,12 @@
         ]
     },
     {
-        "coursStandardName": "Introduction to environmental engineering",
+        "subjectStandardName": "Introduction to environmental engineering",
         "coursList": [
             {
-                "coursStandardName": "Introduction to environmental engineering",
+                "subjectStandardName": "Introduction to environmental engineering",
                 "coursName": "Introduction to environmental engineering",
+                "coursDisplayName": "Barry, Holliger, Nenes",
                 "coursLink": "/studyplan/fr/propedeutique/sciences-et-ingenierie-de-l-environnement/coursebook/introduction-to-environmental-engineering-ENV-167",
                 "prof": "Barry, Holliger, Nenes",
                 "lessons": [

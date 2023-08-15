@@ -1,10 +1,11 @@
 [
     {
-        "coursStandardName": "Géométrie pour architectes I",
+        "subjectStandardName": "Géométrie pour architectes I",
         "coursList": [
             {
-                "coursStandardName": "Géométrie pour architectes I",
+                "subjectStandardName": "Géométrie pour architectes I",
                 "coursName": "Géométrie pour architectes I",
+                "coursDisplayName": "Ismail",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/geometrie-pour-architectes-i-MATH-124",
                 "prof": "Ismail",
                 "lessons": [
@@ -25,11 +26,12 @@
         ]
     },
     {
-        "coursStandardName": "Mathématiques",
+        "subjectStandardName": "Mathématiques",
         "coursList": [
             {
-                "coursStandardName": "Mathématiques",
+                "subjectStandardName": "Mathématiques",
                 "coursName": "Mathématiques",
+                "coursDisplayName": "Burzio",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/mathematiques-MATH-189",
                 "prof": "Burzio",
                 "lessons": [
@@ -56,11 +58,12 @@
         ]
     },
     {
-        "coursStandardName": "Modélisation numérique",
+        "subjectStandardName": "Modélisation numérique",
         "coursList": [
             {
-                "coursStandardName": "Modélisation numérique",
+                "subjectStandardName": "Modélisation numérique",
                 "coursName": "Modélisation numérique",
+                "coursDisplayName": "Mignon",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/modelisation-numerique-AR-114",
                 "prof": "Mignon",
                 "lessons": [
@@ -75,11 +78,12 @@
         ]
     },
     {
-        "coursStandardName": "Tomographie architecturale",
+        "subjectStandardName": "Tomographie architecturale",
         "coursList": [
             {
-                "coursStandardName": "Tomographie architecturale",
+                "subjectStandardName": "Tomographie architecturale",
                 "coursName": "Tomographie architecturale",
+                "coursDisplayName": "Abenia, Taillieu",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/tomographie-architecturale-AR-129",
                 "prof": "Abenia, Taillieu",
                 "lessons": [
@@ -100,11 +104,12 @@
         ]
     },
     {
-        "coursStandardName": "Art fundaments",
+        "subjectStandardName": "Art fundaments",
         "coursList": [
             {
-                "coursStandardName": "Art fundaments",
+                "subjectStandardName": "Art fundaments",
                 "coursName": "Art fundaments",
+                "coursDisplayName": "Fröhlich, Rochat",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/art-fundaments-AR-119",
                 "prof": "Fröhlich, Rochat",
                 "lessons": [
@@ -131,11 +136,12 @@
         ]
     },
     {
-        "coursStandardName": "Histoire et théories de l'environnement I",
+        "subjectStandardName": "Histoire et théories de l'environnement I",
         "coursList": [
             {
-                "coursStandardName": "Histoire et théories de l'environnement I",
+                "subjectStandardName": "Histoire et théories de l'environnement I",
                 "coursName": "Histoire et théories de l'environnement I",
+                "coursDisplayName": "Marot",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/histoire-et-theories-de-l-environnement-i-AR-154",
                 "prof": "Marot",
                 "lessons": [
@@ -150,11 +156,12 @@
         ]
     },
     {
-        "coursStandardName": "Théorie et critique du projet BA1",
+        "subjectStandardName": "Théorie et critique du projet BA1",
         "coursList": [
             {
-                "coursStandardName": "Théorie et critique du projet BA1",
+                "subjectStandardName": "Théorie et critique du projet BA1",
                 "coursName": "Théorie et critique du projet BA1",
+                "coursDisplayName": "Dietz, Seewang",
                 "coursLink": "/studyplan/fr/propedeutique/architecture/coursebook/theorie-et-critique-du-projet-ba1-AR-101",
                 "prof": "Dietz, Seewang",
                 "lessons": [

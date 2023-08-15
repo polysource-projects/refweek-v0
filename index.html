@@ -11,7 +11,7 @@
 <body>
     <div
         x-data="store"
-        x-init="fetchCoursDataPerSection()"
+        x-init="fetchSubjectDataPerSections()"
     >
         <h1>EPFL BA1 Week Builder</h1>
         <p>Choisissez une section puis sélectionnez vos cours en fonction du format (inversé, online ou classique), du professeur (ex. manière d'enseigner, examens, ancienneté) et de la langue (anglais, allemand ou français).</p>
@@ -29,12 +29,12 @@
             <div class="form-group">
                 <h4>Cours</h4>
                 <!-- loop and for each cours, allow to choose one professor -->
-                <template x-for="cours in coursDataPerSection[selectedSection]">
+                <template x-for="subject in subjectDataPerSection[selectedSection]">
                     <div style="margin-top: 15px;">
-                        <label x-text="cours.coursStandardName"></label>
-                        <select class="form-control" id="cours-select" x-model="selectedProfessorsPerSectionPerCours[selectedSection][cours.coursStandardName]" x-on:change.debounce="updateEDT">
-                            <template x-for="lesson in cours.coursList">
-                                <option x-text="lesson.prof + (lesson.coursPrecision ? ' (' + lesson.coursPrecision + ')' : '')"></option>
+                        <label x-text="subject.subjectStandardName"></label>
+                        <select class="form-control" id="cours-select" x-model="selectedCoursPerSectionPerSubject[selectedSection][subject.subjectStandardName]" x-on:change.debounce="updateEDT">
+                            <template x-for="cours in subject.coursList">
+                                <option x-text="cours.coursDisplayName"></option>
                             </template>
                         </select>
                     </div>
@@ -105,34 +105,34 @@
             Alpine.data('store', () => ({
                 selectedSection: 'IN',
                 sections: [],
-                selectedProfessorsPerSectionPerCours: {},
-                coursDataPerSection: {},
+                selectedCoursPerSectionPerSubject: {},
+                subjectDataPerSection: {},
                 totalSum: 29,
 
                 init() {
                     this.fetchSections()
                     .then((sections) => {
                         this.sections = sections;
-                        return this.fetchCoursDataPerSection();
+                        return this.fetchSubjectDataPerSections();
                     })
                     .then(() => {
                         this.updateEDT();
                     });
                 },
 
-                async fetchCoursDataPerSection () {
+                async fetchSubjectDataPerSections () {
                     for (const section of this.sections) {
-                        this.coursDataPerSection[section] = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/0eb5d595d5908d6ee3b9cfaa85985ee688872780/data/' + section + '.json')).json()
-                        this.selectedProfessorsPerSectionPerCours[section] = {};
-                        this.coursDataPerSection[section].forEach((cours) => {
-                            const c = cours.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0];
-                            this.selectedProfessorsPerSectionPerCours[section][cours.coursStandardName] = (c.prof + (c.coursPrecision ? ' (' + c.coursPrecision + ')' : ''));
+                        this.subjectDataPerSection[section] = await (await fetch('/data/' + section + '.json')).json()
+                        this.selectedCoursPerSectionPerSubject[section] = {};
+                        this.subjectDataPerSection[section].forEach((subject) => {
+                            const cours = subject.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0]; // on prend les cours sans précision par défaut
+                            this.selectedCoursPerSectionPerSubject[section][cours.subjectStandardName] = cours.coursDisplayName;
                         });
                     }
                 },
 
                 async fetchSections () {
-                    const sections = await (await fetch('https://raw.githubusercontent.com/epfl-tools/epfl-weekbuilder/0eb5d595d5908d6ee3b9cfaa85985ee688872780/data/sections.json')).json();
+                    const sections = await (await fetch('/data/sections.json')).json();
                     return Object.values(sections);
                 },
 
@@ -141,13 +141,13 @@
                     const daysSum = {};
 
 
-                    for (const coursS of this.coursDataPerSection[this.selectedSection]) {
+                    for (const subject of this.subjectDataPerSection[this.selectedSection]) {
 
-                        for (const cours of coursS.coursList) {
+                        for (const cours of subject.coursList) {
 
                             for (const lesson of cours.lessons) {
 
-                                if ((cours.prof + (cours.coursPrecision ? ' (' + cours.coursPrecision + ')' : '')) === this.selectedProfessorsPerSectionPerCours[this.selectedSection][cours.coursStandardName]) {
+                                if (cours.coursDisplayName === this.selectedCoursPerSectionPerSubject[this.selectedSection][subject.subjectStandardName]) {
 
                                     const dayIdx = lesson.day
                                     const hour = lesson.startHour // 5am
@@ -186,7 +186,7 @@
                                         {
                                             id,
                                             calendarId,
-                                            title: cours.coursStandardName,
+                                            title: cours.subjectStandardName,
                                             category: 'time',
                                             dueDateClass: '',
                                             start: start.toISOString(),
