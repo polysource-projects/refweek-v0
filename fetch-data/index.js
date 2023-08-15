@@ -52,13 +52,31 @@ for (const section of Object.keys(sections)) {
                 coursPrecision,
                 coursLink,
                 prof,
-                lessons: []
-            }
+                lessons: [],
+                hourCountCours: 0,
+                hourCountExercices: 0
+            };
 
             // on fetch l'EDT
             const edtPageDocument = await fetchDocument('https://edu.epfl.ch' + coursLink);
             // ça c'est les lignes pour chaque heure
             const semaineDeRef = edtPageDocument.querySelector('.semaineDeRef').children[0].children;
+
+            let hourCountCours = 0;
+            let hourCountExercices = 0;
+
+            const rowsProperty = edtPageDocument.querySelector('.list-bullet');
+            for (const rowProperty of rowsProperty.children) {
+                const row = rowProperty.textContent;
+                if (row.startsWith('Cours')) {
+                    hourCountCours = parseInt(row.split(' ')[1]?.split(' ')[0])
+                } else if (row.startsWith('Exercices')) {
+                    hourCountExercices = parseInt(row.split(' ')[1]?.split(' ')[0])
+                }
+            }
+
+            coursData.hourCountCours = hourCountCours;
+            coursData.hourCountExercices = hourCountExercices;
 
             for (const hours of semaineDeRef) {
 
@@ -101,11 +119,111 @@ for (const section of Object.keys(sections)) {
 
         }
 
+        const newCoursDataList = [];
         const formattedSubjectDataList = [];
 
-        // regroup les cours qui ont le même nom coursStandardName
+        // là on va gérer les cours à dupliquer
 
-        for (const coursData of coursDataList) {
+        for (const cours of coursDataList) {
+
+            console.log(cours.coursName)
+
+
+            const configLecons = [];
+            const configExercices = [];
+
+            const hourCountCours = cours.hourCountCours;
+            const hourCountExercices = cours.hourCountExercices;
+
+            const lessonsExercices = cours.lessons.filter(l => l.isExercice);
+            const lessonsCours = cours.lessons.filter(l => !l.isExercice);
+
+            for (const lesson of lessonsExercices) {
+                let sum = lesson.hoursCount;
+                let currentLessons = [lesson];
+                console.log(sum, hourCountExercices, sum === hourCountExercices)
+                if (sum === hourCountExercices) {
+                    configExercices.push(currentLessons);
+                    currentLessons = [lesson];
+                }
+                for (const lesson2 of lessonsExercices) {
+                    if (lesson2 === lesson) continue;
+                    currentLessons.push(lesson2);
+                    sum += lesson2.hoursCount;
+                    if (sum === hourCountExercices) {
+                        configExercices.push(currentLessons);
+                        sum = lesson.hoursCount;
+                        currentLessons = [lesson];
+                    }
+                }
+            }
+
+            if (cours.coursName === 'Construction mécanique I (pour MT)') console.log(configExercices);
+
+            for (const lesson of lessonsCours) {
+                let sum = lesson.hoursCount;
+                let currentLessons = [lesson];
+                if (sum === hourCountCours) {
+                    configLecons.push(currentLessons);
+                }
+                for (const lesson2 of lessonsCours) {
+                    if (lesson2 === lesson) continue;
+                    currentLessons.push(lesson2);
+                    sum += lesson2.hoursCount;
+                    if (sum === hourCountCours) {
+                        configLecons.push(currentLessons);
+                        sum = lesson.hoursCount;
+                        currentLessons = [lesson];
+                    }
+                }
+            }
+
+            // remove duplicate lessons (diff order but same lessons)
+            const uniqueConfigLecons = [];
+            for (const configLecon of configLecons) {
+                // is there a similar config lecon already in the lecon list?
+                let isUnique = true;
+                for (const uniqueConfigLecon of uniqueConfigLecons) {
+                    if (configLecon.every(cl => uniqueConfigLecon.some(cl2 => cl2 === cl))) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique) uniqueConfigLecons.push(configLecon);
+            }
+
+            const uniqueConfigExercices = [];
+            for (const configExercice of configExercices) {
+                // is there a similar config lecon already in the lecon list?
+                let isUnique = true;
+                for (const uniqueConfigExercice of uniqueConfigExercices) {
+                    if (configExercice.every(cl => uniqueConfigExercice.some(cl2 => cl2 === cl))) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique) uniqueConfigExercices.push(configExercice);
+            }
+
+            if (cours.coursName === 'Construction mécanique I (pour MT)') console.log(uniqueConfigExercices);
+
+            const configTotal = [];
+
+            for (const configExercice of uniqueConfigExercices) {
+                for (const configLecon of uniqueConfigLecons) {
+                    configTotal.push([...configExercice, ...configLecon]);
+                }
+            }
+
+            newCoursDataList.push(...configTotal.map(config => ({
+                ...cours,
+                coursDisplayName: cours.coursDisplayName + (configTotal.length > 1 ? ` (config ${configTotal.indexOf(config) + 1})` : ''),
+                lessons: config
+            })));
+
+        }
+
+        for (const coursData of newCoursDataList) {
             const subjectStandardName = coursData.subjectStandardName;
             const existingSubject = formattedSubjectDataList.find(c => c.subjectStandardName === subjectStandardName);
             if (existingSubject) {

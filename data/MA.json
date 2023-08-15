@@ -10,18 +10,6 @@
                 "prof": "Kressner",
                 "lessons": [
                     {
-                        "day": 2,
-                        "startHour": 8,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
-                        "day": 1,
-                        "startHour": 13,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
                         "day": 1,
                         "startHour": 15,
                         "hoursCount": 1,
@@ -32,8 +20,22 @@
                         "startHour": 15,
                         "hoursCount": 2,
                         "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 3
             }
         ]
     },
@@ -48,18 +50,6 @@
                 "prof": "Monod",
                 "lessons": [
                     {
-                        "day": 1,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
-                        "day": 3,
-                        "startHour": 13,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
                         "day": 4,
                         "startHour": 13,
                         "hoursCount": 2,
@@ -70,8 +60,22 @@
                         "startHour": 14,
                         "hoursCount": 2,
                         "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 4
             }
         ]
     },
@@ -86,12 +90,6 @@
                 "prof": "Bréchet",
                 "lessons": [
                     {
-                        "day": 3,
-                        "startHour": 9,
-                        "hoursCount": 3,
-                        "isExercice": false
-                    },
-                    {
                         "day": 5,
                         "startHour": 10,
                         "hoursCount": 2,
@@ -102,8 +100,16 @@
                         "startHour": 15,
                         "hoursCount": 1,
                         "isExercice": true
+                    },
+                    {
+                        "day": 3,
+                        "startHour": 9,
+                        "hoursCount": 3,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             }
         ]
     },
@@ -124,6 +130,12 @@
                         "isExercice": true
                     },
                     {
+                        "day": 5,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
                         "day": 4,
                         "startHour": 11,
                         "hoursCount": 1,
@@ -134,14 +146,10 @@
                         "startHour": 13,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 5,
-                        "startHour": 15,
-                        "hoursCount": 1,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             }
         ]
     },
@@ -156,18 +164,20 @@
                 "prof": "Wyss",
                 "lessons": [
                     {
-                        "day": 2,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
                         "day": 1,
                         "startHour": 16,
                         "hoursCount": 2,
                         "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 2,
+                "hourCountExercices": 2
             }
         ]
     }

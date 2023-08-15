@@ -125,7 +125,7 @@
                         this.subjectDataPerSection[section] = await (await fetch('/data/' + section + '.json')).json()
                         this.selectedCoursPerSectionPerSubject[section] = {};
                         this.subjectDataPerSection[section].forEach((subject) => {
-                            const cours = subject.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0]; // on prend les cours sans précision par défaut
+                            const cours = subject.coursList.sort((a, b) => (b.coursPrecision && !a.coursPrecision) ? -1 : (b.coursDisplayName - a.coursDisplayName))[0]; // on prend les cours sans précision par défaut
                             this.selectedCoursPerSectionPerSubject[section][cours.subjectStandardName] = cours.coursDisplayName;
                         });
                     }

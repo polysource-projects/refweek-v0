@@ -11,6 +11,12 @@
                 "prof": "Iseli",
                 "lessons": [
                     {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
                         "day": 2,
                         "startHour": 13,
                         "hoursCount": 2,
@@ -21,14 +27,10 @@
                         "startHour": 14,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 4,
-                        "startHour": 16,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             },
             {
                 "subjectStandardName": "Algèbre linéaire",
@@ -39,6 +41,12 @@
                 "prof": "Testerman",
                 "lessons": [
                     {
+                        "day": 4,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
                         "day": 2,
                         "startHour": 13,
                         "hoursCount": 2,
@@ -49,14 +57,10 @@
                         "startHour": 14,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 4,
-                        "startHour": 16,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             },
             {
                 "subjectStandardName": "Algèbre linéaire",
@@ -66,6 +70,12 @@
                 "prof": "Zuleta Estrugo",
                 "lessons": [
                     {
+                        "day": 4,
+                        "startHour": 14,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
                         "day": 2,
                         "startHour": 14,
                         "hoursCount": 2,
@@ -73,17 +83,13 @@
                     },
                     {
                         "day": 4,
-                        "startHour": 14,
-                        "hoursCount": 2,
-                        "isExercice": true
-                    },
-                    {
-                        "day": 4,
                         "startHour": 16,
                         "hoursCount": 2,
                         "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             }
         ]
     },
@@ -100,6 +106,12 @@
                 "lessons": [
                     {
                         "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 1,
                         "startHour": 8,
                         "hoursCount": 2,
                         "isExercice": false
@@ -109,14 +121,10 @@
                         "startHour": 8,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 1,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -127,6 +135,12 @@
                 "prof": "Mountford",
                 "lessons": [
                     {
+                        "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
                         "day": 1,
                         "startHour": 8,
                         "hoursCount": 2,
@@ -137,14 +151,10 @@
                         "startHour": 8,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 3,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -156,6 +166,12 @@
                 "lessons": [
                     {
                         "day": 3,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 3,
                         "startHour": 8,
                         "hoursCount": 2,
                         "isExercice": false
@@ -165,42 +181,10 @@
                         "startHour": 10,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 3,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
-            },
-            {
-                "subjectStandardName": "Analyse I",
-                "coursName": "Analyse I (online)",
-                "coursDisplayName": "Friedli (online)",
-                "coursPrecision": "online",
-                "coursLink": "/studyplan/fr/propedeutique/science-et-genie-des-materiaux/coursebook/analyse-i-online-MATH-101-OL",
-                "prof": "Friedli",
-                "lessons": [
-                    {
-                        "day": 1,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
-                    {
-                        "day": 2,
-                        "startHour": 17,
-                        "hoursCount": 1,
-                        "isExercice": true
-                    },
-                    {
-                        "day": 3,
-                        "startHour": 17,
-                        "hoursCount": 1,
-                        "isExercice": true
-                    }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -209,6 +193,12 @@
                 "coursLink": "/studyplan/fr/propedeutique/science-et-genie-des-materiaux/coursebook/analyse-i-MATH-101-G",
                 "prof": "Chizat",
                 "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 10,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
                     {
                         "day": 1,
                         "startHour": 8,
@@ -220,14 +210,10 @@
                         "startHour": 8,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 1,
-                        "startHour": 10,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 4,
+                "hourCountExercices": 2
             }
         ]
     },
@@ -242,6 +228,12 @@
                 "prof": "Terrettaz, Züttel",
                 "lessons": [
                     {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
                         "day": 2,
                         "startHour": 8,
                         "hoursCount": 2,
@@ -252,14 +244,10 @@
                         "startHour": 11,
                         "hoursCount": 1,
                         "isExercice": false
-                    },
-                    {
-                        "day": 1,
-                        "startHour": 13,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 2
             }
         ]
     },
@@ -281,18 +269,20 @@
                         "isExercice": true
                     },
                     {
-                        "day": 1,
-                        "startHour": 16,
-                        "hoursCount": 3,
-                        "isExercice": false
-                    },
-                    {
                         "day": 3,
                         "startHour": 17,
                         "hoursCount": 2,
                         "isExercice": true
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 16,
+                        "hoursCount": 3,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             },
             {
                 "subjectStandardName": "Physique générale : mécanique",
@@ -310,6 +300,12 @@
                     },
                     {
                         "day": 5,
+                        "startHour": 17,
+                        "hoursCount": 2,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
                         "startHour": 16,
                         "hoursCount": 1,
                         "isExercice": false
@@ -319,14 +315,10 @@
                         "startHour": 17,
                         "hoursCount": 2,
                         "isExercice": false
-                    },
-                    {
-                        "day": 5,
-                        "startHour": 17,
-                        "hoursCount": 2,
-                        "isExercice": true
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             },
             {
                 "subjectStandardName": "Physique générale : mécanique",
@@ -335,18 +327,6 @@
                 "coursLink": "/studyplan/fr/propedeutique/science-et-genie-des-materiaux/coursebook/physique-generale-mecanique-PHYS-101-K",
                 "prof": "Mila",
                 "lessons": [
-                    {
-                        "day": 2,
-                        "startHour": 10,
-                        "hoursCount": 1,
-                        "isExercice": false
-                    },
-                    {
-                        "day": 1,
-                        "startHour": 16,
-                        "hoursCount": 2,
-                        "isExercice": false
-                    },
                     {
                         "day": 3,
                         "startHour": 17,
@@ -358,8 +338,22 @@
                         "startHour": 18,
                         "hoursCount": 1,
                         "isExercice": true
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 10,
+                        "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 16,
+                        "hoursCount": 2,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             }
         ]
     },
@@ -375,29 +369,31 @@
                 "lessons": [
                     {
                         "day": 5,
-                        "startHour": 9,
-                        "hoursCount": 1,
-                        "isExercice": false
-                    },
-                    {
-                        "day": 5,
                         "startHour": 10,
                         "hoursCount": 2,
                         "isExercice": true
                     },
                     {
                         "day": 5,
-                        "startHour": 13,
-                        "hoursCount": 2,
+                        "startHour": 15,
+                        "hoursCount": 1,
+                        "isExercice": true
+                    },
+                    {
+                        "day": 5,
+                        "startHour": 9,
+                        "hoursCount": 1,
                         "isExercice": false
                     },
                     {
                         "day": 5,
-                        "startHour": 15,
-                        "hoursCount": 1,
-                        "isExercice": true
+                        "startHour": 13,
+                        "hoursCount": 2,
+                        "isExercice": false
                     }
-                ]
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
             }
         ]
     }
