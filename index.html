@@ -72,7 +72,6 @@
             },
             isReadOnly: true,
             useFormPopup: false,
-            useDetailPopup: false,
             template: {
                 weekDayName(dayname) {
                     const newDays = {
@@ -144,8 +143,22 @@
                                     const start = new Date();
                                     const end = new Date();
 
-                                    start.setDate(start.getDate() + (dayIdx + 7 - start.getDay()) % 7);
-                                    end.setDate(end.getDate() + (dayIdx + 7 - end.getDay()) % 7);
+                                    const startDiff = (dayIdx + 7 - start.getDay()) % 7;
+                                    const endDiff = (dayIdx + 7 - end.getDay()) % 7;
+
+                                    const endOfWeekDate = new Date();
+                                    endOfWeekDate.setDate(endOfWeekDate.getDate() + (7 - endOfWeekDate.getDay()) % 7);
+
+                                    start.setDate(start.getDate() + startDiff);
+                                    end.setDate(end.getDate() + endDiff);
+
+                                    if (end.getDate() > endOfWeekDate.getDate()) {
+                                        end.setDate(end.getDate() - 7);
+                                    }
+
+                                    if (start.getDate() > endOfWeekDate.getDate()) {
+                                        start.setDate(start.getDate() - 7);
+                                    }
 
                                     start.setHours(hour);
                                     end.setHours(hour + duration);
