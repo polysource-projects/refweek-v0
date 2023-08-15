@@ -60,6 +60,11 @@
                     id: 'calendarlessons',
                     name: 'Lessons',
                     backgroundColor: '#00a9ff',
+                },
+                {
+                    id: 'alldayssum',
+                    name: 'Allday Sum',
+                    backgroundColor: '#E39F9F',
                 }
             ],
             week: {
@@ -127,6 +132,8 @@
 
                 updateEDT () {
                     calendar.clear();
+                    const daysSum = {};
+
 
                     for (const coursS of this.coursDataPerSection[this.selectedSection]) {
 
@@ -166,8 +173,6 @@
                                     start.setMinutes(0, 0, 0);
                                     end.setMinutes(0, 0, 0);
 
-                                    console.log({ start, end })
-
                                     const calendarId = lesson.isExercice ? 'calendarexercices' : 'calendarlessons';
                                     const id = Math.random().toString(36).substr(2, 9);
 
@@ -183,6 +188,9 @@
                                         }
                                     ]);
 
+                                    start.setHours(10, 0);
+                                    daysSum[start.toISOString()] = (daysSum[start.toISOString()] || 0) + duration;
+
                                 }
 
                             }
@@ -190,6 +198,26 @@
                         }
                         
                     }
+
+
+                    console.log(daysSum);
+
+                    Object.keys(daysSum).forEach((c) => {
+                        const end = new Date(c);
+                        end.setHours(10);
+                        calendar.createEvents([
+                            {
+                                id: Math.random().toString(36).substr(2, 9),
+                                calendarId: 'alldayssum',
+                                isAllday: true,
+                                title: 'Total: ' + daysSum[c] + 'h',
+                                category: 'time',
+                                dueDateClass: '',
+                                start: c,
+                                end: end.toISOString(),
+                            }
+                        ]);
+                    });
                 }
             }));
         });
