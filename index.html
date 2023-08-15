@@ -40,7 +40,11 @@
                     </div>
                 </template>
         </div>
-        <b>Attention, vérifiez que le compte d'heures est égal à 29h. Par exemple en GM, en physique vous devez choisir entre les cours du mardi et mercredi ou celui du vendredi si vous prenez Müllhaupt, mais pas les deux. Pareil en construction mécanique, une seule heure d'exercice.</b>
+        <template x-if="totalSum !== 29">
+            <div style="margin-bottom: 10px;">
+                <b x-text="'Attention, votre compte d\'heures n\'est pas égal à 29h (mais '+totalSum+'h), certains cours sont probablement optionnels. Par exemple en GM, en physique vous devez choisir entre les cours du mardi et mercredi ou celui du vendredi si vous prenez Müllhaupt, mais pas les deux. Pareil en construction mécanique, une seule heure d\'exercice.'"></b>
+            </div>
+        </template>
         <p>Note : les leçons sont affichées en bleu, et les exercices en vert. Le site fonctionne très bien sur ordinateur, l'affichage est moins bon sur mobile mais permet tout de même de savoir quelles heures sont libres ou prises par un cours.</p>
         <div id="section-calendar" style="height: 600px;">
         </div>
@@ -103,6 +107,7 @@
                 sections: [],
                 selectedProfessorsPerSectionPerCours: {},
                 coursDataPerSection: {},
+                totalSum: 29,
 
                 init() {
                     this.fetchSections()
@@ -201,8 +206,6 @@
                     }
 
 
-                    console.log(daysSum);
-
                     Object.keys(daysSum).forEach((c) => {
                         const end = new Date(c);
                         end.setHours(10);
@@ -219,6 +222,8 @@
                             }
                         ]);
                     });
+
+                    this.totalSum = Object.values(daysSum).reduce((a, b) => a + b, 0);
                 }
             }));
         });
