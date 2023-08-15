@@ -42,7 +42,7 @@
         </div>
         <template x-if="totalSum !== 29">
             <div style="margin-bottom: 10px;">
-                <b x-text="'Attention, votre compte d\'heures n\'est pas égal à 29h (mais '+totalSum+'h), certains cours sont probablement optionnels. Par exemple en GM, en physique vous devez choisir entre les cours du mardi et mercredi ou celui du vendredi si vous prenez Müllhaupt, mais pas les deux. Pareil en construction mécanique, une seule heure d\'exercice.'"></b>
+                <b x-text="'Attention, votre compte d\'heures n\'est pas égal à 29h (mais '+totalSum+'h). Cette différence provient des données fournies par l\'EPFL et ne correspondront peut-être pas à celles de votre emploi du temps final.'"></b>
             </div>
         </template>
         <p>Note : les leçons sont affichées en bleu, et les exercices en vert. Le site fonctionne très bien sur ordinateur, l'affichage est moins bon sur mobile mais permet tout de même de savoir quelles heures sont libres ou prises par un cours.</p>
@@ -125,7 +125,7 @@
                         this.subjectDataPerSection[section] = await (await fetch('/data/' + section + '.json')).json()
                         this.selectedCoursPerSectionPerSubject[section] = {};
                         this.subjectDataPerSection[section].forEach((subject) => {
-                            const cours = subject.coursList.sort((a, b) => (b.coursPrecision && !a.coursPrecision) ? -1 : (b.coursDisplayName - a.coursDisplayName))[0]; // on prend les cours sans précision par défaut
+                            const cours = subject.coursList.sort((a, b) => b.coursPrecision ? -1 : 1)[0]; // on prend les cours sans précision par défaut
                             this.selectedCoursPerSectionPerSubject[section][cours.subjectStandardName] = cours.coursDisplayName;
                         });
                     }
