@@ -289,7 +289,7 @@
             {
                 "subjectStandardName": "Physique générale : mécanique",
                 "coursName": "Physique générale : mécanique",
-                "coursDisplayName": "Müllhaupt",
+                "coursDisplayName": "Müllhaupt (config 1)",
                 "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/physique-generale-mecanique-PHYS-101-D",
                 "prof": "Müllhaupt",
                 "lessons": [
@@ -310,17 +310,40 @@
                         "startHour": 15,
                         "hoursCount": 3,
                         "isExercice": false
+                    }
+                ],
+                "hourCountCours": 3,
+                "hourCountExercices": 3
+            },
+            {
+                "subjectStandardName": "Physique générale : mécanique",
+                "coursName": "Physique générale : mécanique",
+                "coursDisplayName": "Müllhaupt (config 2)",
+                "coursLink": "/studyplan/fr/propedeutique/genie-mecanique/coursebook/physique-generale-mecanique-PHYS-101-D",
+                "prof": "Müllhaupt",
+                "lessons": [
+                    {
+                        "day": 1,
+                        "startHour": 15,
+                        "hoursCount": 2,
+                        "isExercice": true
                     },
                     {
-                        "day": 2,
-                        "startHour": 8,
-                        "hoursCount": 2,
-                        "isExercice": false
+                        "day": 1,
+                        "startHour": 17,
+                        "hoursCount": 1,
+                        "isExercice": true
                     },
                     {
                         "day": 3,
                         "startHour": 16,
                         "hoursCount": 1,
+                        "isExercice": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 2,
                         "isExercice": false
                     }
                 ],

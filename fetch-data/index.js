@@ -165,6 +165,7 @@ for (const section of Object.keys(sections)) {
                 let currentLessons = [lesson];
                 if (sum === hourCountCours) {
                     configLecons.push(currentLessons);
+                    currentLessons = [lesson];
                 }
                 for (const lesson2 of lessonsCours) {
                     if (lesson2 === lesson) continue;
