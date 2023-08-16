@@ -40,9 +40,9 @@
                     </div>
                 </template>
         </div>
-        <template x-if="totalSum !== 29">
+        <template x-if="totalSum < 29 || totalSum > 31">
             <div style="margin-bottom: 10px;">
-                <b x-text="'Attention, votre compte d\'heures n\'est pas égal à 29h (mais '+totalSum+'h). Cette différence provient des données fournies par l\'EPFL et ne correspondront peut-être pas à celles de votre emploi du temps final.'"></b>
+                <b x-text="'Total des heures : '+totalSum+'h. En temps normal, votre nombre d\'heures de cours doit se situer entre 29h et 31h. Si ce n\'est pas le cas, cela signifie probablement que les données fournies par l\'EPFL ne sont pas correctes pour le moment. Vous pouvez me contacter sur t.me/androz2091 pour plus d\'informations.'"></b>
             </div>
         </template>
         <p>Note : les leçons sont affichées en bleu, les exercices en vert (vert clair si une semaine sur deux) et les TP en rose.<br>Le site fonctionne très bien sur ordinateur, l'affichage est moins bon sur mobile mais permet tout de même de savoir quelles heures sont libres ou prises par un cours.</p>
