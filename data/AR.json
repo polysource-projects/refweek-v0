@@ -16,6 +16,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "SG1",
                         "demiWeek": false
                     },
@@ -26,13 +27,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "SG1",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 1,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -53,6 +56,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "INM201",
                         "demiWeek": false
                     },
@@ -63,6 +67,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE6",
                         "demiWeek": false
                     },
@@ -73,13 +78,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE6",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -100,13 +107,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO3",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 0,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -127,6 +136,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "STCC - Cloud C",
                         "demiWeek": false
                     },
@@ -137,13 +147,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "STCC - Cloud C",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -164,6 +176,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "AAC008",
                         "demiWeek": false
                     },
@@ -174,6 +187,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "AAC008",
                         "demiWeek": false
                     },
@@ -184,13 +198,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "AAC008",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 1,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -211,13 +227,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 0,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -233,16 +251,29 @@
                 "lessons": [
                     {
                         "day": 1,
-                        "startHour": 8,
+                        "startHour": 10,
                         "hoursCount": 2,
                         "isExercice": false,
+                        "isTP": false,
                         "isCours": true,
+                        "isProject": false,
+                        "salle": "SG1",
+                        "demiWeek": false
+                    },
+                    {
+                        "day": 2,
+                        "startHour": 8,
+                        "hoursCount": 4,
+                        "isExercice": false,
+                        "isCours": false,
+                        "isProject": true,
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 0,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 4
             },
             {
                 "subjectStandardName": "Théorie et critique du projet BA1",
@@ -258,13 +289,24 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "SG1",
+                        "demiWeek": false
+                    },
+                    {
+                        "day": 1,
+                        "startHour": 13,
+                        "hoursCount": 4,
+                        "isExercice": false,
+                        "isCours": false,
+                        "isProject": true,
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 0,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 4
             }
         ]
     }

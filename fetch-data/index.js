@@ -69,6 +69,7 @@ for (const section of Object.keys(sections)) {
             let hourCountCours = 0;
             let hourCountExercices = 0;
             let hourCountTP = 0;
+            let hourCountProject = 0;
 
             const rowsProperty = edtPageDocument.querySelector('.list-bullet');
             for (const rowProperty of rowsProperty.children) {
@@ -79,12 +80,15 @@ for (const section of Object.keys(sections)) {
                     hourCountExercices = parseInt(row.split(' ')[1]?.split(' ')[0])
                 } else if (row.startsWith('TP')) {
                     hourCountTP = parseInt(row.split(' ')[1]?.split(' ')[0])
+                } else if (row.startsWith('Projet')) {
+                    hourCountProject = parseInt(row.split(' ')[1]?.split(' ')[0])
                 }
             }
 
             coursData.hourCountCours = hourCountCours;
             coursData.hourCountExercices = hourCountExercices;
             coursData.hourCountTP = hourCountTP;
+            coursData.hourCountProject = hourCountProject;
 
             for (const hours of semaineDeRef) {
 
@@ -103,8 +107,9 @@ for (const section of Object.keys(sections)) {
                     const hoursCount = parseInt(child.getAttribute('rowspan')) || 1;
                     const salle = child?.children[0]?.textContent;
                     const isTP = salle?.startsWith('MED');
+                    const isProject = child.classList.contains('projet');
                     const isExercice = child.classList.contains('exercice') && !isTP;
-                    const isCours = !isExercice && !isTP;
+                    const isCours = !isExercice && !isTP && !isProject;
                     
                     // en fait ici on doit vérifier si l'heure d'avant il y a un cours ou pas, parce que ça décale les jours
                     // par ex. s'il y a un cours l'heure d'avant le mardi on aura juste un td pour le lundi, le mercredi et le jeudi
@@ -123,6 +128,7 @@ for (const section of Object.keys(sections)) {
                         isExercice,
                         isTP,
                         isCours,
+                        isProject,
                         salle,
                         demiWeek: false
                     });
@@ -147,14 +153,17 @@ for (const section of Object.keys(sections)) {
             const configLecons = [];
             const configExercices = [];
             const configTPs = [];
+            const configProjects = [];
 
             const hourCountCours = cours.hourCountCours;
             const hourCountExercices = cours.hourCountExercices;
             const hourCountTP = cours.hourCountTP;
+            const hourCountProject = cours.hourCountProject;
 
             const lessonsExercices = cours.lessons.filter(l => l.isExercice);
             const lessonsCours = cours.lessons.filter(l => l.isCours);
             const lessonsTPs = cours.lessons.filter(l => l.isTP);
+            const lessonsProjects = cours.lessons.filter(l => l.isProject);
 
             for (const lesson of lessonsExercices) {
                 let sum = lesson.hoursCount;
@@ -219,6 +228,25 @@ for (const section of Object.keys(sections)) {
                 }
             }
 
+            for (const lesson of lessonsProjects) {
+                let sum = lesson.hoursCount;
+                let currentLessons = [lesson];
+                if (sum === hourCountProject) {
+                    configProjects.push(currentLessons);
+                    currentLessons = [lesson];
+                }
+                for (const lesson2 of lessonsProjects) {
+                    if (lesson2 === lesson) continue;
+                    currentLessons.push(lesson2);
+                    sum += lesson2.hoursCount;
+                    if (sum === hourCountProject) {
+                        configProjects.push(currentLessons);
+                        sum = lesson.hoursCount;
+                        currentLessons = [lesson];
+                    }
+                }
+            }
+
             // remove duplicate lessons (diff order but same lessons)
             const uniqueConfigLecons = [];
             for (const configLecon of configLecons) {
@@ -259,15 +287,31 @@ for (const section of Object.keys(sections)) {
                 if (isUnique) uniqueConfigTPs.push(configTP);
             }
 
+            const uniqueConfigProjects = [];
+            for (const configProject of configProjects) {
+                // is there a similar config lecon already in the lecon list?
+                let isUnique = true;
+                for (const uniqueConfigProject of uniqueConfigProjects) {
+                    if (configProject.every(cl => uniqueConfigProject.some(cl2 => cl2 === cl))) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique) uniqueConfigProjects.push(configProject);
+            }
+
             const configTotal = [];
 
             if (uniqueConfigExercices.length === 0) uniqueConfigExercices.push([]);
             if (uniqueConfigLecons.length === 0) uniqueConfigLecons.push([]);
             if (uniqueConfigTPs.length === 0) uniqueConfigTPs.push([]);
+            if (uniqueConfigProjects.length === 0) uniqueConfigProjects.push([]);
             for (const configExercice of uniqueConfigExercices) {
                 for (const configLecon of uniqueConfigLecons) {
                     for (const configTP of uniqueConfigTPs) {
-                        configTotal.push([...configExercice, ...configLecon, ...configTP]);
+                        for (const configProject of uniqueConfigProjects) {
+                            configTotal.push([...configExercice, ...configLecon, ...configTP, ...configProject]);
+                        }
                     }
                 }
             }

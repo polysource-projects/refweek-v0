@@ -16,6 +16,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM13",
                         "demiWeek": false
                     },
@@ -26,6 +27,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CO017",
                         "demiWeek": false
                     },
@@ -36,6 +38,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     },
@@ -46,13 +49,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CM13",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -73,6 +78,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CO017",
                         "demiWeek": false
                     },
@@ -83,6 +89,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "GCA331",
                         "demiWeek": false
                     },
@@ -93,6 +100,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CM11",
                         "demiWeek": false
                     },
@@ -103,13 +111,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO3",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 4,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -130,6 +140,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CO017",
                         "demiWeek": false
                     },
@@ -140,6 +151,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE1",
                         "demiWeek": false
                     },
@@ -150,13 +162,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -177,6 +191,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "INF2",
                         "demiWeek": false
                     },
@@ -187,6 +202,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM012",
                         "demiWeek": false
                     },
@@ -197,6 +213,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO1",
                         "demiWeek": false
                     },
@@ -207,13 +224,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "SG1",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -234,6 +253,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM1100",
                         "demiWeek": false
                     },
@@ -244,13 +264,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "BCH2201",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     }

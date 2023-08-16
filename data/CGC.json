@@ -17,6 +17,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM013",
                         "demiWeek": false
                     },
@@ -27,6 +28,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     },
@@ -37,13 +39,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Algèbre linéaire",
@@ -60,6 +64,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "GCC330",
                         "demiWeek": false
                     },
@@ -70,6 +75,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1515",
                         "demiWeek": false
                     },
@@ -80,13 +86,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1515",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Algèbre linéaire",
@@ -102,6 +110,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "GRC001",
                         "demiWeek": false
                     },
@@ -112,6 +121,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO1",
                         "demiWeek": false
                     },
@@ -122,13 +132,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO1",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -150,6 +162,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CO122",
                         "demiWeek": false
                     },
@@ -160,6 +173,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CM011",
                         "demiWeek": false
                     },
@@ -170,13 +184,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1100",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -193,6 +209,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM010",
                         "demiWeek": false
                     },
@@ -203,6 +220,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "PO01",
                         "demiWeek": false
                     },
@@ -213,13 +231,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -236,6 +256,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE1515",
                         "demiWeek": false
                     },
@@ -246,6 +267,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1515",
                         "demiWeek": false
                     },
@@ -256,13 +278,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1515",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -278,6 +302,7 @@
                         "hoursCount": 1,
                         "isExercice": true,
                         "isCours": false,
+                        "isProject": false,
                         "demiWeek": false
                     },
                     {
@@ -286,12 +311,14 @@
                         "hoursCount": 1,
                         "isExercice": true,
                         "isCours": false,
+                        "isProject": false,
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Analyse I",
@@ -307,6 +334,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "SG0211",
                         "demiWeek": false
                     },
@@ -317,6 +345,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     },
@@ -327,13 +356,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
                 "hourCountExercices": 2,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -354,6 +385,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CM1100",
                         "demiWeek": false
                     },
@@ -364,6 +396,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "BCH2201",
                         "demiWeek": false
                     },
@@ -374,6 +407,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "BCH2201",
                         "demiWeek": false
                     },
@@ -384,6 +418,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO3",
                         "demiWeek": false
                     },
@@ -394,6 +429,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE1",
                         "demiWeek": false
                     },
@@ -404,13 +440,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "BCH2201",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 6,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     },
@@ -432,6 +470,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "SG1",
                         "demiWeek": false
                     },
@@ -442,6 +481,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "GCA330",
                         "demiWeek": false
                     },
@@ -452,13 +492,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE6",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Physique générale : mécanique",
@@ -475,6 +517,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     },
@@ -485,6 +528,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE1101",
                         "demiWeek": false
                     },
@@ -495,6 +539,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     },
@@ -505,13 +550,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             },
             {
                 "subjectStandardName": "Physique générale : mécanique",
@@ -527,6 +574,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE1100",
                         "demiWeek": false
                     },
@@ -537,6 +585,7 @@
                         "isExercice": true,
                         "isTP": false,
                         "isCours": false,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     },
@@ -547,6 +596,7 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CO2",
                         "demiWeek": false
                     },
@@ -557,13 +607,15 @@
                         "isExercice": false,
                         "isTP": false,
                         "isCours": true,
+                        "isProject": false,
                         "salle": "CE3",
                         "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
                 "hourCountExercices": 3,
-                "hourCountTP": 0
+                "hourCountTP": 0,
+                "hourCountProject": 0
             }
         ]
     }

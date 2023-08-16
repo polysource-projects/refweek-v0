@@ -72,6 +72,12 @@
                     name: 'Lessons',
                     backgroundColor: '#00a9ff',
                 },
+
+                {
+                    id: 'calendarprojects',
+                    name: 'Projects',
+                    backgroundColor: '#ffbbcd',
+                },
                 {
                     id: 'calendartp',
                     name: 'TP',
@@ -189,7 +195,7 @@
                                     start.setMinutes(0, 0, 0);
                                     end.setMinutes(0, 0, 0);
 
-                                    const calendarId = lesson.isExercice ? (lesson.demiWeek ? 'calendarexercicesdemiweek' : 'calendarexercices') : lesson.isTP ? 'calendartp' : 'calendarlessons';
+                                    const calendarId = lesson.isExercice ? (lesson.demiWeek ? 'calendarexercicesdemiweek' : 'calendarexercices') : lesson.isTP ? 'calendartp' : (lesson.isProject ? 'calendarprojects' : 'calendarlessons');
                                     const id = Math.random().toString(36).substr(2, 9);
 
                                     console.log(lesson.salle)
