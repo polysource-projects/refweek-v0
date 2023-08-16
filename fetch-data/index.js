@@ -6,10 +6,10 @@ const fetchDocument = (link) => fetch(link).then(res => res.text()).then(body =>
 
 const sections = {
     'informatique': 'IN',
+    'genie-mecanique': 'GM',
     'architecture': 'AR',
     'chimie-et-genie-chimique': 'CGC',
     'genie-civil': 'GC',
-    'genie-mecanique': 'GM',
     'genie-electrique-et-electronique': 'EL',
     'ingenierie-des-sciences-du-vivant': 'SV',
     'mathematiques': 'MA',
@@ -54,16 +54,21 @@ for (const section of Object.keys(sections)) {
                 prof,
                 lessons: [],
                 hourCountCours: 0,
-                hourCountExercices: 0
+                hourCountExercices: 0,
+                hourCountTP: 0
             };
 
             // on fetch l'EDT
             const edtPageDocument = await fetchDocument('https://edu.epfl.ch' + coursLink);
+            if (section === 'GM') {
+                console.log(coursLink)
+            }
             // ça c'est les lignes pour chaque heure
             const semaineDeRef = edtPageDocument.querySelector('.semaineDeRef').children[0].children;
 
             let hourCountCours = 0;
             let hourCountExercices = 0;
+            let hourCountTP = 0;
 
             const rowsProperty = edtPageDocument.querySelector('.list-bullet');
             for (const rowProperty of rowsProperty.children) {
@@ -72,11 +77,14 @@ for (const section of Object.keys(sections)) {
                     hourCountCours = parseInt(row.split(' ')[1]?.split(' ')[0])
                 } else if (row.startsWith('Exercices')) {
                     hourCountExercices = parseInt(row.split(' ')[1]?.split(' ')[0])
+                } else if (row.startsWith('TP')) {
+                    hourCountTP = parseInt(row.split(' ')[1]?.split(' ')[0])
                 }
             }
 
             coursData.hourCountCours = hourCountCours;
             coursData.hourCountExercices = hourCountExercices;
+            coursData.hourCountTP = hourCountTP;
 
             for (const hours of semaineDeRef) {
 
@@ -93,7 +101,10 @@ for (const section of Object.keys(sections)) {
                     const isCourse = child.classList.contains('taken');
                     if (!isCourse) continue;
                     const hoursCount = parseInt(child.getAttribute('rowspan')) || 1;
-                    const isExercice = child.classList.contains('exercice');
+                    const salle = child?.children[0]?.textContent;
+                    const isTP = salle?.startsWith('MED');
+                    const isExercice = child.classList.contains('exercice') && !isTP;
+                    const isCours = !isExercice && !isTP;
                     
                     // en fait ici on doit vérifier si l'heure d'avant il y a un cours ou pas, parce que ça décale les jours
                     // par ex. s'il y a un cours l'heure d'avant le mardi on aura juste un td pour le lundi, le mercredi et le jeudi
@@ -109,7 +120,11 @@ for (const section of Object.keys(sections)) {
                         day: daysPresentDansLeTr[idx],
                         startHour,
                         hoursCount,
-                        isExercice
+                        isExercice,
+                        isTP,
+                        isCours,
+                        salle,
+                        demiWeek: false
                     });
                 }
 
@@ -131,12 +146,15 @@ for (const section of Object.keys(sections)) {
 
             const configLecons = [];
             const configExercices = [];
+            const configTPs = [];
 
             const hourCountCours = cours.hourCountCours;
             const hourCountExercices = cours.hourCountExercices;
+            const hourCountTP = cours.hourCountTP;
 
             const lessonsExercices = cours.lessons.filter(l => l.isExercice);
-            const lessonsCours = cours.lessons.filter(l => !l.isExercice);
+            const lessonsCours = cours.lessons.filter(l => l.isCours);
+            const lessonsTPs = cours.lessons.filter(l => l.isTP);
 
             for (const lesson of lessonsExercices) {
                 let sum = lesson.hoursCount;
@@ -158,7 +176,10 @@ for (const section of Object.keys(sections)) {
                 }
             }
 
-            if (cours.coursName === 'Construction mécanique I (pour MT)') console.log(configExercices);
+            if (lessonsExercices.length > 0 && configExercices.length === 0) {
+                lessonsExercices[0].demiWeek = true;
+                configExercices.push([lessonsExercices[0]]);
+            }
 
             for (const lesson of lessonsCours) {
                 let sum = lesson.hoursCount;
@@ -173,6 +194,25 @@ for (const section of Object.keys(sections)) {
                     sum += lesson2.hoursCount;
                     if (sum === hourCountCours) {
                         configLecons.push(currentLessons);
+                        sum = lesson.hoursCount;
+                        currentLessons = [lesson];
+                    }
+                }
+            }
+
+            for (const lesson of lessonsTPs) {
+                let sum = lesson.hoursCount;
+                let currentLessons = [lesson];
+                if (sum === hourCountTP) {
+                    configTPs.push(currentLessons);
+                    currentLessons = [lesson];
+                }
+                for (const lesson2 of lessonsTPs) {
+                    if (lesson2 === lesson) continue;
+                    currentLessons.push(lesson2);
+                    sum += lesson2.hoursCount;
+                    if (sum === hourCountTP) {
+                        configTPs.push(currentLessons);
                         sum = lesson.hoursCount;
                         currentLessons = [lesson];
                     }
@@ -206,13 +246,29 @@ for (const section of Object.keys(sections)) {
                 if (isUnique) uniqueConfigExercices.push(configExercice);
             }
 
-            if (cours.coursName === 'Construction mécanique I (pour MT)') console.log(uniqueConfigExercices);
+            const uniqueConfigTPs = [];
+            for (const configTP of configTPs) {
+                // is there a similar config lecon already in the lecon list?
+                let isUnique = true;
+                for (const uniqueConfigTP of uniqueConfigTPs) {
+                    if (configTP.every(cl => uniqueConfigTP.some(cl2 => cl2 === cl))) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+                if (isUnique) uniqueConfigTPs.push(configTP);
+            }
 
             const configTotal = [];
 
+            if (uniqueConfigExercices.length === 0) uniqueConfigExercices.push([]);
+            if (uniqueConfigLecons.length === 0) uniqueConfigLecons.push([]);
+            if (uniqueConfigTPs.length === 0) uniqueConfigTPs.push([]);
             for (const configExercice of uniqueConfigExercices) {
                 for (const configLecon of uniqueConfigLecons) {
-                    configTotal.push([...configExercice, ...configLecon]);
+                    for (const configTP of uniqueConfigTPs) {
+                        configTotal.push([...configExercice, ...configLecon, ...configTP]);
+                    }
                 }
             }
 

@@ -45,7 +45,7 @@
                 <b x-text="'Attention, votre compte d\'heures n\'est pas égal à 29h (mais '+totalSum+'h). Cette différence provient des données fournies par l\'EPFL et ne correspondront peut-être pas à celles de votre emploi du temps final.'"></b>
             </div>
         </template>
-        <p>Note : les leçons sont affichées en bleu, et les exercices en vert. Le site fonctionne très bien sur ordinateur, l'affichage est moins bon sur mobile mais permet tout de même de savoir quelles heures sont libres ou prises par un cours.</p>
+        <p>Note : les leçons sont affichées en bleu, les exercices en vert (vert clair si une semaine sur deux) et les TP en rose.<br>Le site fonctionne très bien sur ordinateur, l'affichage est moins bon sur mobile mais permet tout de même de savoir quelles heures sont libres ou prises par un cours.</p>
         <div id="section-calendar" style="height: 600px;">
         </div>
     </div>
@@ -55,16 +55,27 @@
     <script>
         const calendar = new tui.Calendar('#section-calendar', {
             defaultView: 'week',
+            useDetailPopup: true,
             calendars: [
                 {
                     id: 'calendarexercices',
                     name: 'Exercices',
                     backgroundColor: '#03bd9e',
                 },
-                    {
+                {
+                    id: 'calendarexercicesdemiweek',
+                    name: 'Exercices demi-week',
+                    backgroundColor: '#4cffe5',
+                },
+                {
                     id: 'calendarlessons',
                     name: 'Lessons',
                     backgroundColor: '#00a9ff',
+                },
+                {
+                    id: 'calendartp',
+                    name: 'TP',
+                    backgroundColor: '#ff5583',
                 },
                 {
                     id: 'alldayssum',
@@ -74,14 +85,13 @@
             ],
             week: {
                 hourStart: 8,
-                hourEnd: 19,
+                hourEnd: 20,
                 eventView: true,
                 taskView: false,
                 alldayView: false,
                 narrowWeekend: true
             },
             isReadOnly: true,
-            useFormPopup: false,
             template: {
                 weekDayName(dayname) {
                     const newDays = {
@@ -179,9 +189,10 @@
                                     start.setMinutes(0, 0, 0);
                                     end.setMinutes(0, 0, 0);
 
-                                    const calendarId = lesson.isExercice ? 'calendarexercices' : 'calendarlessons';
+                                    const calendarId = lesson.isExercice ? (lesson.demiWeek ? 'calendarexercicesdemiweek' : 'calendarexercices') : lesson.isTP ? 'calendartp' : 'calendarlessons';
                                     const id = Math.random().toString(36).substr(2, 9);
 
+                                    console.log(lesson.salle)
                                     calendar.createEvents([
                                         {
                                             id,
@@ -191,11 +202,13 @@
                                             dueDateClass: '',
                                             start: start.toISOString(),
                                             end: end.toISOString(),
+                                            location: lesson.salle,
+                                            body: lesson.demiWeek ? 'Ce cours aura probablement lieu une semaine sur deux.' : '',
                                         }
                                     ]);
 
                                     start.setHours(10, 0);
-                                    daysSum[start.toISOString()] = (daysSum[start.toISOString()] || 0) + duration;
+                                    daysSum[start.toISOString()] = (daysSum[start.toISOString()] || 0) + (lesson.demiWeek ? duration/2 : duration);
 
                                 }
 

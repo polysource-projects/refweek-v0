@@ -13,29 +13,46 @@
                         "day": 1,
                         "startHour": 15,
                         "hoursCount": 1,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CM13",
+                        "demiWeek": false
                     },
                     {
                         "day": 4,
                         "startHour": 15,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CO017",
+                        "demiWeek": false
                     },
                     {
                         "day": 2,
                         "startHour": 8,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CO2",
+                        "demiWeek": false
                     },
                     {
                         "day": 1,
                         "startHour": 13,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CM13",
+                        "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
-                "hourCountExercices": 3
+                "hourCountExercices": 3,
+                "hourCountTP": 0
             }
         ]
     },
@@ -53,29 +70,46 @@
                         "day": 4,
                         "startHour": 13,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CO017",
+                        "demiWeek": false
                     },
                     {
                         "day": 2,
                         "startHour": 14,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "GCA331",
+                        "demiWeek": false
                     },
                     {
                         "day": 1,
                         "startHour": 10,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CM11",
+                        "demiWeek": false
                     },
                     {
                         "day": 3,
                         "startHour": 13,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CO3",
+                        "demiWeek": false
                     }
                 ],
                 "hourCountCours": 4,
-                "hourCountExercices": 4
+                "hourCountExercices": 4,
+                "hourCountTP": 0
             }
         ]
     },
@@ -93,23 +127,36 @@
                         "day": 5,
                         "startHour": 10,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CO017",
+                        "demiWeek": false
                     },
                     {
                         "day": 3,
                         "startHour": 15,
                         "hoursCount": 1,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CE1",
+                        "demiWeek": false
                     },
                     {
                         "day": 3,
                         "startHour": 9,
                         "hoursCount": 3,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CE1",
+                        "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
-                "hourCountExercices": 3
+                "hourCountExercices": 3,
+                "hourCountTP": 0
             }
         ]
     },
@@ -127,29 +174,46 @@
                         "day": 4,
                         "startHour": 9,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "INF2",
+                        "demiWeek": false
                     },
                     {
                         "day": 5,
                         "startHour": 15,
                         "hoursCount": 1,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CM012",
+                        "demiWeek": false
                     },
                     {
                         "day": 4,
                         "startHour": 11,
                         "hoursCount": 1,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "CO1",
+                        "demiWeek": false
                     },
                     {
                         "day": 5,
                         "startHour": 13,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "SG1",
+                        "demiWeek": false
                     }
                 ],
                 "hourCountCours": 3,
-                "hourCountExercices": 3
+                "hourCountExercices": 3,
+                "hourCountTP": 0
             }
         ]
     },
@@ -167,17 +231,26 @@
                         "day": 1,
                         "startHour": 16,
                         "hoursCount": 2,
-                        "isExercice": true
+                        "isExercice": true,
+                        "isTP": false,
+                        "isCours": false,
+                        "salle": "CM1100",
+                        "demiWeek": false
                     },
                     {
                         "day": 2,
                         "startHour": 10,
                         "hoursCount": 2,
-                        "isExercice": false
+                        "isExercice": false,
+                        "isTP": false,
+                        "isCours": true,
+                        "salle": "BCH2201",
+                        "demiWeek": false
                     }
                 ],
                 "hourCountCours": 2,
-                "hourCountExercices": 2
+                "hourCountExercices": 2,
+                "hourCountTP": 0
             }
         ]
     }
