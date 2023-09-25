@@ -177,15 +177,16 @@
 
                                     const endOfWeekDate = new Date();
                                     endOfWeekDate.setDate(endOfWeekDate.getDate() + (7 - endOfWeekDate.getDay()) % 7);
+                                    console.log(endOfWeekDate.toISOString())
 
                                     start.setDate(start.getDate() + startDiff);
                                     end.setDate(end.getDate() + endDiff);
 
-                                    if (end.getDate() > endOfWeekDate.getDate()) {
+                                    if (end.getTime() > endOfWeekDate.getTime()) {
                                         end.setDate(end.getDate() - 7);
                                     }
 
-                                    if (start.getDate() > endOfWeekDate.getDate()) {
+                                    if (start.getTime() > endOfWeekDate.getTime()) {
                                         start.setDate(start.getDate() - 7);
                                     }
 
@@ -199,6 +200,8 @@
                                     const id = Math.random().toString(36).substr(2, 9);
 
                                     console.log(lesson.salle)
+
+                                    console.log(start.toISOString())
                                     calendar.createEvents([
                                         {
                                             id,
